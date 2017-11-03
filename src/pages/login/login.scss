@@ -1,0 +1,117 @@
+page-login {
+
+ion-content {
+background: -webkit-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
+    background: -o-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
+    background: -ms-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
+    background: -moz-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
+    background: linear-gradient(to top, #f7931e 0%, #e9742f 83%, #e76f32 100%);
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+ion-footer{
+	color: white;
+	font-size: 1.3rem;
+}
+	.floatLabel:hover{
+		transition: all .5s ease;
+		transform: translateY(15px);
+	}
+	.checkbox-icon{
+		left: 3px;
+		border-radius: 0 !important;
+	    top: 2px !important;
+	    position: relative !important;
+	    height: 14px !important;
+	    width: 14px !important;
+	    border-width: 1px !important;
+	    border-style: solid !important;
+	    border-color: white !important;
+	    background-color: transparent !important;
+	}
+	button.button{
+    		box-shadow: none;
+		    height: 44px;
+		    font-size: 2.3rem;
+		    width: 100%;
+		    border-radius: 0 !important;
+		    background-color: transparent;
+		    border: 1px solid white !important;
+		    margin: 1px 0px !important;
+	}
+	button:active, button.button.activated{
+	 background-color: white;
+	 color:#df8d2e;
+	}
+	button.item-cover{
+	    top: 2px;
+	    left: 2px;
+	}
+	ion-img{
+	 background: none;
+	 display: block;
+   	 margin: auto;
+     margin-top: 25%;
+	}
+	ion-card.card{
+	 color:white;
+	 box-shadow: none;
+	 background: transparent !important;
+	 border-radius: 0px !important;
+	 margin-top: 8%;
+	}
+	input
+	{
+		width: 100%;
+	    font-size: 2.0rem;
+	    padding: 10px 4px;
+	    background-color: rgba(255, 255, 255, 0.25);
+	    border: none;
+    	border-bottom: thick solid white;
+    	border-radius: 0px !important;
+	}
+	.column{
+	    width: 33% !important;
+	}
+
+	.row {
+		width: 100%;
+	}
+
+	div.selfieLoginContainer{
+		margin-top: 25px;
+		width:100%;
+	}
+
+	.column{
+		width: 25%;
+		text-align: center;
+	}
+
+	button.selfieLogin{
+	    background-color: #5d5d5d;
+	}
+
+    .lowerPanel{
+    	position: absolute;
+	    background-color: #efefef;
+	    bottom: 0;
+	    width: 100%;
+	    height: 200px;
+    }
+
+
+}

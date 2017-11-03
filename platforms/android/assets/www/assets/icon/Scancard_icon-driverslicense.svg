@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="31px" viewBox="0 0 41 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Scan-Card---1" transform="translate(-37.000000, -403.000000)">
+            <g id="Page-1" transform="translate(38.000000, 404.000000)">
+                <polygon id="Stroke-1" stroke="#3B7CFF" stroke-linecap="round" stroke-linejoin="round" points="0 29 39 29 39 0 0 0"></polygon>
+                <path d="M20,9 L23,9" id="Stroke-6" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20,14 L31.5,14" id="Stroke-7" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20,19 L26.5,19" id="Stroke-7" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval" stroke="#3B7CFF" stroke-width="0.75" cx="9.5" cy="10.5" r="3.5"></circle>
+                <path d="M9.5,21.6059887 C14,21.6641781 14,21.9852814 14,19.5 C14,17.0147186 11.9852814,15 9.5,15 C7.01471863,15 5,17.0147186 5,19.5 C5,21.9852814 5,21.5477992 9.5,21.6059887 Z" id="Oval" stroke="#3B7CFF" stroke-width="0.75"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>
+
+    <ion-card>
+      <ion-label class="floatLabel" style="opacity:0.5; position:relative; top:30px; left:4px">User ID</ion-label>
+      <input placeholder="User ID" type="text" [(ngModel)]="account.username" name="username">
+    </ion-card>
+
+    <ion-card>
+      <input placeholder="Password" type="password" [(ngModel)]="account.password" name="password">
+    </ion-card>
+
+    <div style="color:white; width:140px; margin:auto;">
+      Remember Me <ion-checkbox [(ngModel)]="thing"></ion-checkbox>
+    </div>
+
+<ion-card style="margin-top:20px">
+    <button ion-button disabled>Sign On</button>
+  </ion-card>
+
+  <div style="color:white; width:140px; margin:auto; margin-top:25px;">
+    Forgot Password?
+  </div>
+
+<ion-footer>
+        <div class="row" text-center>
+          <div class="column">
+            Locate
+          </div>
+          <div class="column">
+            View
+          </div>
+          <div class="column">
+            Help
+          </div>
+        </div>
+</ion-footer>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="49px" viewBox="0 0 62 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Creation" transform="translate(-74.000000, -455.000000)">
+            <g id="Slide-Device" transform="translate(36.000000, 421.000000)">
+                <g id="Card">
+                    <g id="Icon-&amp;-Text" transform="translate(0.981481, 13.148148)">
+                        <g id="Group-2" transform="translate(37.000000, 22.000000)">
+                            <g id="Page-1" transform="translate(0.629630, 0.037037)">
+                                <polygon id="Stroke-1" stroke="#3B7CFF" stroke-linecap="round" stroke-linejoin="round" points="0 38.1296296 51.2777778 38.1296296 51.2777778 0 0 0"></polygon>
+                                <path d="M7.88888889,30.2407407 L11.8333333,30.2407407" id="Stroke-6" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle id="Oval-2" stroke="#3B7CFF" stroke-width="0.75" cx="36.1574074" cy="8.5462963" r="3.28703704"></circle>
+                                <circle id="Oval-2" stroke="#3B7CFF" stroke-width="0.75" fill="#3B7CFF" opacity="0.618319746" cx="40.1018519" cy="8.5462963" r="3.28703704"></circle>
+                                <path d="M7.88888889,18.4074074 L23.0092593,18.4074074" id="Stroke-7" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M27.6111111,18.4074074 L36.1574074,18.4074074" id="Stroke-7" stroke="#3B4859" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <rect id="Rectangle" fill="#3B7CFF" x="55.8518519" y="2.66666667" width="1.31481481" height="40.7592593" rx="0.657407407"></rect>
+                            <rect id="Rectangle" fill="#3B7CFF" transform="translate(30.870370, 42.768519) rotate(-90.000000) translate(-30.870370, -42.768519) " x="30.212963" y="16.4722222" width="1.31481481" height="52.5925926" rx="0.657407407"></rect>
+                            <rect id="Rectangle" fill="#3B7CFF" x="59.7962963" y="6.61111111" width="1.31481481" height="40.7592593" rx="0.657407407"></rect>
+                            <rect id="Rectangle" fill="#3B7CFF" transform="translate(34.814815, 46.712963) rotate(-90.000000) translate(-34.814815, -46.712963) " x="34.1574074" y="20.4166667" width="1.31481481" height="52.5925926" rx="0.657407407"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
