@@ -25811,6 +25811,16 @@ page-quickview ion-footer {
   background-color: #f7f7f7;
 }
 
+page-quickview ion-img img {
+  top: 8px;
+  position: absolute;
+  display: block;
+}
+
+page-quickview ion-header {
+  position: fixed !important;
+}
+
 page-quickview .headerText {
   float: left;
 }

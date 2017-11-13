@@ -38,15 +38,15 @@ var map = {
 		5
 	],
 	"../pages/quickview/quickview.module": [
-		311,
+		309,
 		4
 	],
 	"../pages/search/search.module": [
-		309,
+		310,
 		3
 	],
 	"../pages/settings/settings.module": [
-		310,
+		311,
 		2
 	],
 	"../pages/signup/signup.module": [
@@ -376,9 +376,9 @@ AppModule = __decorate([
                     { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] }
                 ]
