@@ -1,15 +1,15 @@
 webpackJsonp([5],{
 
-/***/ 309:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuPageModule", function() { return MenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(317);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,27 +20,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginPageModule = (function () {
-    function LoginPageModule() {
+var MenuPageModule = (function () {
+    function MenuPageModule() {
     }
-    return LoginPageModule;
+    return MenuPageModule;
 }());
-LoginPageModule = __decorate([
+MenuPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */]),
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
             __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */]
+            __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]
         ]
     })
-], LoginPageModule);
+], MenuPageModule);
 
-//# sourceMappingURL=login.module.js.map
+//# sourceMappingURL=menu.module.js.map
 
 /***/ }),
 
@@ -48,12 +48,9 @@ LoginPageModule = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_providers__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -65,44 +62,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-
-
-var LoginPage = (function () {
-    function LoginPage(navCtrl, user, toastCtrl, translateService) {
-        var _this = this;
+var MenuPage = (function () {
+    function MenuPage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.user = user;
-        this.toastCtrl = toastCtrl;
-        this.translateService = translateService;
-        // The account fields for the login form.
-        // If you're using the username field with or without email, make
-        // sure to add it to the type
-        this.account = JSON.stringify({
-            username: 'UserName',
-            password: 'password'
-        });
-        this.translateService.get('LOGIN_ERROR').subscribe(function (value) {
-            _this.loginErrorString = value;
-        });
+        this.rootPage = 'ContentPage';
+        // used for an example of ngFor and navigation
+        this.pages = [
+            { title: 'Sign in', component: 'LoginPage' },
+            { title: 'Signup', component: 'SignupPage' }
+        ];
     }
-    // open the selfie capture page
-    LoginPage.prototype.doLogin = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__pages__["a" /* CaptureLoginPage */]);
+    MenuPage.prototype.ionViewDidLoad = function () {
+        console.log('Hello MenuPage Page');
     };
-    return LoginPage;
+    MenuPage.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(page.component);
+    };
+    return MenuPage;
 }());
-LoginPage = __decorate([
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+], MenuPage.prototype, "nav", void 0);
+MenuPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\pl66553\Documents\facialRec\src\pages\login\login.html"*/'<ion-content>\n  <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>\n\n    <ion-card>\n      <ion-label class="floatLabel" style="opacity:0.5; position:relative; top:30px; left:4px">User ID</ion-label>\n      <input placeholder="User ID" type="text" [(ngModel)]="account.username" name="username">\n    </ion-card>\n\n    <ion-card>\n      <input placeholder="Password" type="password" [(ngModel)]="account.password" name="password">\n    </ion-card>\n\n    <div style="color:white; width:140px; margin:auto;">\n      Remember Me <ion-checkbox [(ngModel)]="thing"></ion-checkbox>\n    </div>\n\n<ion-card style="margin-top:20px">\n    <button ion-button disabled>Sign On</button>\n  </ion-card>\n\n  <div style="color:white; width:140px; margin:auto; margin-top:25px;">\n    Forgot Password?\n  </div>\n\n<ion-footer>\n        <div class="row" text-center>\n          <div class="column">\n            Locate\n          </div>\n          <div class="column">\n            View\n          </div>\n          <div class="column">\n            Help\n          </div>\n        </div>\n</ion-footer>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\pl66553\Documents\facialRec\src\pages\login\login.html"*/
+        selector: 'page-menu',template:/*ion-inline-start:"C:\Users\round\Documents\facialRec\facialRec\src\pages\menu\menu.html"*/'<ion-menu [content]="content">\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"C:\Users\round\Documents\facialRec\facialRec\src\pages\menu\menu.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_3__providers_providers__["d" /* User */],
-        __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ToastController */],
-        __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]])
-], LoginPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], MenuPage);
 
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=menu.js.map
 
 /***/ })
 

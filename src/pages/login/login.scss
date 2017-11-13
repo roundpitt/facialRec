@@ -1,5 +1,11 @@
 page-login {
 
+	@media screen and (max-height: 400px) {
+	    ion-footer {
+	        display: none;
+	    }
+	}
+
 ion-content {
 background: -webkit-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
     background: -o-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100%);
@@ -9,39 +15,114 @@ background: -webkit-linear-gradient(bottom, #f7931e 0%, #e9742f 83%, #e76f32 100
 
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: white;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: white;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: white;
-}
-:-moz-placeholder { /* Firefox 18- */
+.text-input::-moz-placeholder {
   color: white;
 }
 
+.text-input:-ms-input-placeholder {
+  color: white;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.text-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.text-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.text-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+    background: none !important;
+ }
+.button-md:hover:not(.disable-hover) {
+    background-color: white;
+}
+
+.button-md:focus {
+    border-radius: 2px;
+    overflow: hidden;
+    height: 44px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#df8d2e;
+}
+
+.text-input {
+	margin-left: 5px !important;
+}
+ion-label{
+	position: absolute;
+	opacity: 1;
+	margin-left: 5px !important;
+}
 ion-footer{
+	margin-bottom: 10px;
 	color: white;
 	font-size: 1.3rem;
 }
-	.floatLabel:hover{
-		transition: all .5s ease;
-		transform: translateY(15px);
+
+  @keyframes sixPhasesFadeIn {
+     0% {opacity: 0}
+     20% {opacity: 0}
+     40% {opacity: 0}
+     60% {opacity: 0.33}
+     80% {opacity: 0.66}
+     100% {opacity: 1}
+  }
+  @keyframes sixPhasesFadeOut {
+     0% {opacity: 1}
+     5% {opacity: 0.66}
+     10% {opacity: 0.33}
+     20% {opacity: 0}
+     80% {opacity: 0}
+     100% {opacity: 0}
+  }
+
+
+	.floatLabel{
+		opacity: 0;
 	}
+
 	.checkbox-icon{
 		left: 3px;
 		border-radius: 0 !important;
 	    top: 2px !important;
 	    position: relative !important;
-	    height: 14px !important;
-	    width: 14px !important;
+	    height: 12px !important;
+	    width: 12px !important;
 	    border-width: 1px !important;
 	    border-style: solid !important;
 	    border-color: white !important;
 	    background-color: transparent !important;
 	}
+
+	ion-card.userIDCard.card {
+    	margin-top: 40px;
+    	margin-bottom: 20px;
+	}
+
+	.checkbox-checked .checkbox-inner{
+		border-width: 1.5px !important;
+    	border-top-width: 0 !important;
+   		border-left-width: 0 !important;
+    	width: 3px !important;
+    	height: 6px  !important;
+	}
+
+	.checkbox-inner{
+	    left: 3.5px !important;
+	    top: 1px !important;
+	}
+
 	button.button{
     		box-shadow: none;
 		    height: 44px;
@@ -71,13 +152,11 @@ ion-footer{
 	 box-shadow: none;
 	 background: transparent !important;
 	 border-radius: 0px !important;
-	 margin-top: 8%;
 	}
-	input
+	ion-input
 	{
 		width: 100%;
-	    font-size: 2.0rem;
-	    padding: 10px 4px;
+	    //padding: 10px 4px;
 	    background-color: rgba(255, 255, 255, 0.25);
 	    border: none;
     	border-bottom: thick solid white;
@@ -85,6 +164,7 @@ ion-footer{
 	}
 	.column{
 	    width: 33% !important;
+		text-align: center;
 	}
 
 	.row {
@@ -94,11 +174,6 @@ ion-footer{
 	div.selfieLoginContainer{
 		margin-top: 25px;
 		width:100%;
-	}
-
-	.column{
-		width: 25%;
-		text-align: center;
 	}
 
 	button.selfieLogin{

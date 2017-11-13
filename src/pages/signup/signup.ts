@@ -10,6 +10,7 @@ import { MainPage } from '../pages';
   selector: 'page-signup',
   templateUrl: 'signup.html'
 })
+
 export class SignupPage {
   // The account fields for the login form.
   // If you're using the username field with or without email, make

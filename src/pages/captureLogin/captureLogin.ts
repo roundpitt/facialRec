@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers/providers';
-import { MainPage } from '../pages';
+//import { MainPage } from '../pages';
 
 @IonicPage()
 @Component({
@@ -32,7 +32,7 @@ export class CaptureLoginPage {
     })
   }
 
-  // Attempt to login in through kairos!
+  
   doLogin() {
     this.user.login(this.account).subscribe((resp) => {
       //this.navCtrl.push(MainPage);

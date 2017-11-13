@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { RequestOptions } from '@angular/http';
-import { Headers } from '@angular/http';
+//import { RequestOptions } from '@angular/http';
+//import { Headers } from '@angular/http';
 
 /**
  * Api is a generic REST Api handler. Set your API url first.
@@ -17,11 +17,7 @@ export class Api {
   url: string = 'http://10.29.140.42:8080/VisaX';
 
   constructor(public http: HttpClient) {
-    let headers = new Headers({
-      'companyName': 'VaultProgram',
-      'companyKey': 'aHgNwkIjUhJuzJfsNJh'       
-    });
-    //let options = new RequestOptions({ headers });
+    
     
   }
 

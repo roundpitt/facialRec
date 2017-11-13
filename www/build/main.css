@@ -3760,35 +3760,59 @@ ion-icon::before {
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat-Regular.ttf.eot");
-  src: url("../assets/fonts/Montserrat-Regular.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-Regular.ttf.woff2") format("woff2"), url("../assets/fonts/Montserrat-Regular.ttf.woff") format("woff"), url("../assets/fonts/Montserrat-Regular.ttf") format("truetype"), url("../assets/fonts/Montserrat-Regular.ttf.svg#gurbaniakharregular") format("svg");
-  font-weight: normal;
+  font-family: "Roboto";
   font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../assets/fonts/roboto-light.woff2") format("woff2"), url("../assets/fonts/roboto-light.woff") format("woff"), url("../assets/fonts/roboto-light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat-Italic.ttf.eot");
-  src: url("../assets/fonts/Montserrat-Italic.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-Italic.ttf.woff2") format("woff2"), url("../assets/fonts/Montserrat-Italic.ttf.woff") format("woff"), url("../assets/fonts/Montserrat-Italic.ttf") format("truetype"), url("../assets/fonts/Montserrat-Italic.ttf.svg#gurbaniakharregular") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat-Bold.ttf.eot");
-  src: url("../assets/fonts/Montserrat-Bold.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-Bold.ttf.woff2") format("woff2"), url("../assets/fonts/Montserrat-Bold.ttf.woff") format("woff"), url("../assets/fonts/Montserrat-Bold.ttf") format("truetype"), url("../assets/fonts/Montserrat-Bold.ttf.svg#gurbaniakharregular") format("svg");
-  font-weight: bold;
+  font-family: "Roboto";
   font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../assets/fonts/roboto-regular.woff2") format("woff2"), url("../assets/fonts/roboto-regular.woff") format("woff"), url("../assets/fonts/roboto-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat-BoldItalic.ttf.eot");
-  src: url("../assets/fonts/Montserrat-BoldItalic.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-BoldItalic.ttf.woff2") format("woff2"), url("../assets/fonts/Montserrat-BoldItalic.ttf.woff") format("woff"), url("../assets/fonts/Montserrat-BoldItalic.ttf") format("truetype"), url("../assets/fonts/Montserrat-BoldItalic.ttf.svg#gurbaniakharregular") format("svg");
-  font-weight: bold;
-  font-style: italic;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../assets/fonts/roboto-medium.woff2") format("woff2"), url("../assets/fonts/roboto-medium.woff") format("woff"), url("../assets/fonts/roboto-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../assets/fonts/roboto-bold.woff2") format("woff2"), url("../assets/fonts/roboto-bold.woff") format("woff"), url("../assets/fonts/roboto-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Noto Sans"), local("Noto-Sans-Regular"), url("../assets/fonts/noto-sans-regular.woff") format("woff"), url("../assets/fonts/noto-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans"), local("Noto-Sans-Regular"), url("../assets/fonts/noto-sans-regular.woff") format("woff"), url("../assets/fonts/noto-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../assets/fonts/noto-sans-bold.woff") format("woff"), url("../assets/fonts/noto-sans-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../assets/fonts/noto-sans-bold.woff") format("woff"), url("../assets/fonts/noto-sans-bold.ttf") format("truetype");
 }
 
 ion-action-sheet {
@@ -4284,7 +4308,7 @@ ion-alert input {
   border-top-width: 0;
   border-left-width: 0;
   border-style: solid;
-  border-color: #f9fafc;
+  border-color: #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -5453,21 +5477,21 @@ ion-footer {
 }
 
 ion-app.ios {
-  font-family: "Montserrat";
+  font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
   font-size: 1.4rem;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 ion-app.md {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 ion-app.wp {
   font-family: "Segoe UI", "Noto Sans", sans-serif;
   font-size: 1.4rem;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 ion-backdrop {
@@ -8461,7 +8485,7 @@ ion-app [no-margin] .scroll-content {
 
 .content-ios {
   color: #000;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 .content-ios.outer-content {
@@ -8669,7 +8693,7 @@ ion-app.ios [margin-horizontal] .scroll-content {
 
 .content-md {
   color: #000;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 .content-md hr {
@@ -8835,7 +8859,7 @@ ion-app.md [margin-horizontal] .scroll-content {
 
 .content-wp {
   color: #000;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 .content-wp hr {
@@ -15325,7 +15349,7 @@ ion-menu[type=overlay] .show-backdrop {
 }
 
 .ios .menu-inner {
-  background: #f9fafc;
+  background: #fff;
 }
 
 .ios .menu-content-reveal {
@@ -15344,7 +15368,7 @@ ion-menu[type=overlay] .show-backdrop {
 }
 
 .md .menu-inner {
-  background: #f9fafc;
+  background: #fff;
 }
 
 .md .menu-content-reveal {
@@ -16059,7 +16083,7 @@ ion-popover {
   min-height: 0;
   max-height: 90%;
   color: #000;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .popover-ios .popover-arrow {
@@ -16078,7 +16102,7 @@ ion-popover {
   z-index: 10;
   width: 14px;
   height: 14px;
-  background-color: #f9fafc;
+  background-color: #fff;
   content: "";
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -16102,7 +16126,7 @@ ion-popover {
   min-height: 0;
   max-height: 90%;
   color: #000;
-  background: #f9fafc;
+  background: #fff;
   -webkit-box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
 }
@@ -16123,7 +16147,7 @@ ion-popover {
   max-height: 90%;
   border: 2px solid #ccc;
   color: #000;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .popover-wp .popover-viewport {
@@ -16798,7 +16822,7 @@ ion-range ion-icon {
 
 .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md .range-knob-min.range-knob-min .range-pin,
@@ -16820,7 +16844,7 @@ ion-range ion-icon {
 
 .range-md-primary .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md-primary .range-md .range-knob-min.range-knob-min .range-pin,
@@ -16838,7 +16862,7 @@ ion-range ion-icon {
 
 .range-md-secondary .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md-secondary .range-md .range-knob-min.range-knob-min .range-pin,
@@ -16856,7 +16880,7 @@ ion-range ion-icon {
 
 .range-md-danger .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md-danger .range-md .range-knob-min.range-knob-min .range-pin,
@@ -16874,7 +16898,7 @@ ion-range ion-icon {
 
 .range-md-light .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md-light .range-md .range-knob-min.range-knob-min .range-pin,
@@ -16892,7 +16916,7 @@ ion-range ion-icon {
 
 .range-md-dark .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #f9fafc;
+  background: #fff;
 }
 
 .range-md-dark .range-md .range-knob-min.range-knob-min .range-pin,
@@ -20510,7 +20534,7 @@ ion-toast {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #f9fafc;
+  background-color: #fff;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition-duration: 300ms;
@@ -25488,41 +25512,161 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-top));
 }
 
+@media screen and (max-height: 400px) {
+  page-login ion-footer {
+    display: none;
+  }
+}
+
 page-login ion-content {
   background: -webkit-gradient(linear, left bottom, left top, from(#f7931e), color-stop(83%, #e9742f), to(#e76f32));
   background: linear-gradient(to top, #f7931e 0%, #e9742f 83%, #e76f32 100%);
 }
 
-page-login ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+page-login .text-input::-moz-placeholder {
   color: white;
 }
 
-page-login ::-moz-placeholder {
-  /* Firefox 19+ */
+page-login .text-input:-ms-input-placeholder {
   color: white;
 }
 
-page-login :-ms-input-placeholder {
-  /* IE 10+ */
+page-login .text-input::-webkit-input-placeholder {
   color: white;
 }
 
-page-login :-moz-placeholder {
-  /* Firefox 18- */
-  color: white;
+page-login .text-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+page-login .text-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+page-login .text-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+page-login .header-md::after, page-login .tabs-md[tabsPlacement="top"] > .tabbar::after, page-login .footer-md::before, page-login .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  background: none !important;
+}
+
+page-login .button-md:hover:not(.disable-hover) {
+  background-color: white;
+}
+
+page-login .button-md:focus {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 44px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #df8d2e;
+}
+
+page-login .text-input {
+  margin-left: 5px !important;
+}
+
+page-login ion-label {
+  position: absolute;
+  opacity: 1;
+  margin-left: 5px !important;
 }
 
 page-login ion-footer {
+  margin-bottom: 10px;
   color: white;
   font-size: 1.3rem;
 }
 
-page-login .floatLabel:hover {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  -webkit-transform: translateY(15px);
-  transform: translateY(15px);
+@-webkit-keyframes sixPhasesFadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.33;
+  }
+  80% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sixPhasesFadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.33;
+  }
+  80% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sixPhasesFadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.66;
+  }
+  10% {
+    opacity: 0.33;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sixPhasesFadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.66;
+  }
+  10% {
+    opacity: 0.33;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+page-login .floatLabel {
+  opacity: 0;
 }
 
 page-login .checkbox-icon {
@@ -25530,12 +25674,30 @@ page-login .checkbox-icon {
   border-radius: 0 !important;
   top: 2px !important;
   position: relative !important;
-  height: 14px !important;
-  width: 14px !important;
+  height: 12px !important;
+  width: 12px !important;
   border-width: 1px !important;
   border-style: solid !important;
   border-color: white !important;
   background-color: transparent !important;
+}
+
+page-login ion-card.userIDCard.card {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+page-login .checkbox-checked .checkbox-inner {
+  border-width: 1.5px !important;
+  border-top-width: 0 !important;
+  border-left-width: 0 !important;
+  width: 3px !important;
+  height: 6px  !important;
+}
+
+page-login .checkbox-inner {
+  left: 3.5px !important;
+  top: 1px !important;
 }
 
 page-login button.button {
@@ -25573,13 +25735,10 @@ page-login ion-card.card {
   box-shadow: none;
   background: transparent !important;
   border-radius: 0px !important;
-  margin-top: 8%;
 }
 
-page-login input {
+page-login ion-input {
   width: 100%;
-  font-size: 2.0rem;
-  padding: 10px 4px;
   background-color: rgba(255, 255, 255, 0.25);
   border: none;
   border-bottom: thick solid white;
@@ -25588,6 +25747,7 @@ page-login input {
 
 page-login .column {
   width: 33% !important;
+  text-align: center;
 }
 
 page-login .row {
@@ -25597,11 +25757,6 @@ page-login .row {
 page-login div.selfieLoginContainer {
   margin-top: 25px;
   width: 100%;
-}
-
-page-login .column {
-  width: 25%;
-  text-align: center;
 }
 
 page-login button.selfieLogin {
@@ -25614,4 +25769,102 @@ page-login .lowerPanel {
   bottom: 0;
   width: 100%;
   height: 200px;
+}
+
+page-quickview .bold {
+  font-weight: 500;
+}
+
+page-quickview .back-button {
+  display: none !important;
+}
+
+page-quickview .mainContent {
+  margin-top: 15%;
+}
+
+page-quickview ion-img {
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+}
+
+page-quickview .column {
+  width: 25% !important;
+  text-align: center;
+}
+
+page-quickview .toolbar-title {
+  color: white !important;
+}
+
+page-quickview .toolbar-background {
+  background-color: #df8d2e;
+}
+
+page-quickview ion-footer {
+  padding-bottom: 10px;
+  color: grey;
+  position: fixed !important;
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+}
+
+page-quickview ion-img img {
+  top: 8px;
+  position: absolute;
+  display: block;
+}
+
+page-quickview ion-header {
+  position: fixed !important;
+}
+
+page-quickview .headerText {
+  float: left;
+}
+
+page-quickview .amountText {
+  float: right;
+}
+
+page-quickview ion-item {
+  border-bottom: 1px solid #dedede !important;
+}
+
+page-quickview .item-inner {
+  border-bottom: 0 !important;
+}
+
+page-quickview ion-item.postedDate {
+  background-color: #f4f4f4;
+  min-height: 35px;
+  height: 35px;
+}
+
+page-quickview p.headerText {
+  font-size: 1.3rem;
+}
+
+page-quickview ion-item.slim {
+  height: 35px;
+  min-height: 35px;
+}
+
+page-quickview ion-item.medium {
+  height: 45px;
+  min-height: 45px;
+}
+
+page-quickview .green {
+  color: #207d20;
+}
+
+page-quickview .blue {
+  color: blue;
+}
+
+page-quickview .orange {
+  color: #df8d2e;
 }

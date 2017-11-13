@@ -4,6 +4,9 @@ export const FirstRunPage = 'LoginPage';
 // The page the user goes to when they click on selfie login from the login screen
 export const CaptureLoginPage = 'CaptureLoginPage'
 
+export const QuickViewPage = 'QuickViewPage'
+export const TabsPage = 'TabsPage';
+
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
 export const MainPage = 'TabsPage';

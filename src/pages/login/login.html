@@ -1,36 +1,40 @@
 <ion-content>
   <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>
 
-    <ion-card>
-      <ion-label class="floatLabel" style="opacity:0.5; position:relative; top:30px; left:4px">User ID</ion-label>
-      <input placeholder="User ID" type="text" [(ngModel)]="account.username" name="username">
+    <ion-card class="userIDCard">
+      <ion-label class="floatLabel" id="userIdLabel" >User ID</ion-label>
+      <ion-input placeholder="User ID" type="text" (keyup)="checkSubmit()" (ionBlur)="blurLabel('userIdLabel')" (ionFocus)="floatLabel('userIdLabel')"  [(ngModel)]="account.username" id="username" name="username"></ion-input>
     </ion-card>
 
     <ion-card>
-      <input placeholder="Password" type="password" [(ngModel)]="account.password" name="password">
+      <ion-label class="floatLabel" id="passwordLabel" >Password</ion-label>
+      <ion-input id="passwordInput" placeholder="Password" (keyup)="checkSubmit()" type="password" (ionBlur)="blurLabel('passwordLabel')" (ionFocus)="floatLabel('passwordLabel')"  [(ngModel)]="account.password" name="password"></ion-input>
     </ion-card>
 
     <div style="color:white; width:140px; margin:auto;">
-      Remember Me <ion-checkbox [(ngModel)]="thing"></ion-checkbox>
+      Remember Me <ion-checkbox [(ngModel)]="thing" height="14px" width="14px"></ion-checkbox>
     </div>
 
 <ion-card style="margin-top:20px">
-    <button ion-button disabled>Sign On</button>
+    <button id="loginBtn" (click)="doLogin()" ion-button disabled>Sign On</button>
   </ion-card>
 
   <div style="color:white; width:140px; margin:auto; margin-top:25px;">
     Forgot Password?
   </div>
 
-<ion-footer>
+<ion-footer id="footer">
         <div class="row" text-center>
           <div class="column">
+            <ion-img width="10px" height="40px" src="assets/img/location.png"></ion-img>
             Locate
           </div>
           <div class="column">
+            <ion-img width="40px" height="40px" style="position:relative; top:7px;" src="assets/img/moneybar.png"></ion-img>
             View
           </div>
           <div class="column">
+            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/questionmark.png"></ion-img>
             Help
           </div>
         </div>
