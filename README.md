@@ -37,8 +37,25 @@ Follow these naming conventions
 	b. page name is camel case
 	c. module name is always first letter capital camel case.
 
-ionic serve to test
-ionic cordova emulate android to create debug apk
+To test on a browser
+```bash
+ionic serve
+```
+
+to create apk
+```bash
+ionic cordova emulate android
+```
+
+
+Once APK is created, connect android phone and drag apk from this folder:
+```bash
+C:\Users\username\path to project\facialRec\platforms\android\build\outputs\apk
+```
+To the phones folder. 
+Then open My Files/File Manager on the phone. 
+Run the File.
+
 
 # To push to git hub. https://github.com/roundpitt/facialRec.git
 1. open git shell
