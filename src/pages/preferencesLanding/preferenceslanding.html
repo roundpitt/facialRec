@@ -16,11 +16,11 @@
 </ion-header>
 <div class="mainContent">
   <ion-list>
-      <ion-item class="headerText">Authentication</ion-item>
-      <ion-item class="headerText">Money Bar Preview</ion-item>
-      <ion-item class="headerText">Punch The Pig</ion-item>
-      <ion-item class="headerText">Switch Accounts</ion-item>
-      <ion-item class="headerText">Zelle&#8480; Preferences</ion-item>
+      <ion-item (click)="toAuthentication()" class="headerText">Authentication<div class="amountText">&gt;</div></ion-item>
+      <ion-item class="headerText">Money Bar Preview<div class="amountText">&gt;</div></ion-item>
+      <ion-item class="headerText">Punch The Pig<div class="amountText">&gt;</div></ion-item>
+      <ion-item class="headerText">Switch Accounts<div class="amountText">&gt;</div></ion-item>
+      <ion-item class="headerText">Zelle&#8480; Preferences<div class="amountText">&gt;</div></ion-item>
   </ion-list>
 </div>
   <ion-footer id="footer">

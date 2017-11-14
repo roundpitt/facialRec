@@ -7,6 +7,7 @@ export const CaptureLoginPage = 'CaptureLoginPage'
 export const QuickViewPage = 'QuickViewPage'
 export const TabsPage = 'TabsPage';
 export const PreferencesLandingPage = 'PreferencesLandingPage';
+export const AuthenticationPage = 'AuthenticationPage'
 export const ZelleLandingPage = 'ZelleLandingPage';
 
 // The main page the user will see as they use the app over a long period of time.

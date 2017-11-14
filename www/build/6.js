@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 309:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__preferencesLanding__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__preferencesLanding__ = __webpack_require__(322);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ PreferencesLandingPageModule = __decorate([
 
 /***/ }),
 
-/***/ 320:
+/***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61,6 +61,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -92,14 +93,17 @@ var PreferencesLandingPage = (function () {
     PreferencesLandingPage.prototype.ngAfterViewInit = function () {
     };
     PreferencesLandingPage.prototype.toQuickView = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["c" /* QuickViewPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["d" /* QuickViewPage */]);
+    };
+    PreferencesLandingPage.prototype.toAuthentication = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["a" /* AuthenticationPage */]);
     };
     return PreferencesLandingPage;
 }());
 PreferencesLandingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-preferenceslanding',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>PREFERENCES</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <ion-list>\n\n      <ion-item class="headerText">Authentication</ion-item>\n\n      <ion-item class="headerText">Money Bar Preview</ion-item>\n\n      <ion-item class="headerText">Punch The Pig</ion-item>\n\n      <ion-item class="headerText">Switch Accounts</ion-item>\n\n      <ion-item class="headerText">Zelle&#8480; Preferences</ion-item>\n\n  </ion-list>\n\n</div>\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/
+        selector: 'page-preferenceslanding',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>PREFERENCES</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <ion-list>\n\n      <ion-item (click)="toAuthentication()" class="headerText">Authentication<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Money Bar Preview<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Punch The Pig<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Switch Accounts<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Zelle&#8480; Preferences<div class="amountText">&gt;</div></ion-item>\n\n  </ion-list>\n\n</div>\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
 ], PreferencesLandingPage);

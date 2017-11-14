@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 314:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs__ = __webpack_require__(327);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ TabsPageModule = __decorate([
 
 /***/ }),
 
-/***/ 325:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73,9 +73,9 @@ var TabsPage = (function () {
         var _this = this;
         this.navCtrl = navCtrl;
         this.translateService = translateService;
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__pages__["d" /* Tab1Root */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_3__pages__["e" /* Tab2Root */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__pages__["f" /* Tab3Root */];
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__pages__["e" /* Tab1Root */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_3__pages__["f" /* Tab2Root */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__pages__["g" /* Tab3Root */];
         this.tab1Title = " ";
         this.tab2Title = " ";
         this.tab3Title = " ";

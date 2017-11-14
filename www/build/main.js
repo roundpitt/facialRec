@@ -1,4 +1,4 @@
-webpackJsonp([11],{
+webpackJsonp([12],{
 
 /***/ 121:
 /***/ (function(module, exports) {
@@ -21,48 +21,52 @@ webpackEmptyAsyncContext.id = 121;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/captureLogin/captureLogin.module": [
+	"../pages/authentication/authentication.module": [
 		305,
+		11
+	],
+	"../pages/captureLogin/captureLogin.module": [
+		306,
 		10
 	],
 	"../pages/cards/cards.module": [
-		306,
+		307,
 		9
 	],
 	"../pages/login/login.module": [
-		307,
+		308,
 		8
 	],
 	"../pages/menu/menu.module": [
-		308,
+		309,
 		7
 	],
 	"../pages/preferencesLanding/preferenceslanding.module": [
-		309,
+		310,
 		6
 	],
 	"../pages/quickview/quickview.module": [
-		310,
+		311,
 		5
 	],
 	"../pages/search/search.module": [
-		311,
+		312,
 		4
 	],
 	"../pages/settings/settings.module": [
-		312,
+		313,
 		3
 	],
 	"../pages/signup/signup.module": [
-		313,
+		314,
 		2
 	],
 	"../pages/tabs/tabs.module": [
-		314,
+		315,
 		1
 	],
 	"../pages/zelleLanding/zellelanding.module": [
-		315,
+		316,
 		0
 	]
 };
@@ -258,16 +262,17 @@ Items = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirstRunPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FirstRunPage; });
 /* unused harmony export CaptureLoginPage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return QuickViewPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return QuickViewPage; });
 /* unused harmony export TabsPage */
 /* unused harmony export PreferencesLandingPage */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationPage; });
 /* unused harmony export ZelleLandingPage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MainPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Tab1Root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Tab2Root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Tab3Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MainPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Tab1Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Tab2Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Tab3Root; });
 // The page the user lands on after opening the app and without a session
 // The page the user lands on after opening the app and without a session
 var FirstRunPage = 'LoginPage';
@@ -276,6 +281,7 @@ var CaptureLoginPage = 'CaptureLoginPage';
 var QuickViewPage = 'QuickViewPage';
 var TabsPage = 'TabsPage';
 var PreferencesLandingPage = 'PreferencesLandingPage';
+var AuthenticationPage = 'AuthenticationPage';
 var ZelleLandingPage = 'ZelleLandingPage';
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
@@ -386,6 +392,7 @@ AppModule = __decorate([
                 menuType: 'push'
             }, {
                 links: [
+                    { loadChildren: '../pages/authentication/authentication.module#AuthenticationPageModule', name: 'AuthenticationPage', segment: 'authentication', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/captureLogin/captureLogin.module#CaptureLoginPageModule', name: 'CaptureLoginPage', segment: 'captureLogin', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
@@ -676,7 +683,7 @@ var MyApp = (function () {
         this.config = config;
         this.statusBar = statusBar;
         this.splashScreen = splashScreen;
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_pages__["a" /* FirstRunPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_pages__["b" /* FirstRunPage */];
         this.pages = [
             { title: 'Log Out', component: 'LoginPage', icon: 'assets/img/preferencesIcon.png' },
             { title: 'Pay Bills', component: 'LoginPage', icon: 'assets/img/payBillsIcon.png' },
