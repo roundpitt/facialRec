@@ -1,3 +1,22 @@
+ion-menu ion-content {
+  background-color: #f3f3f3 !important;
+}
+
+ion-menu button.item.item-block {
+  background-color: transparent;
+}
+
+ion-menu ion-img.img-unloaded img {
+  display: block;
+}
+
+ion-menu ion-img {
+  background-color: transparent;
+  margin-right: 8px;
+  min-width: 26px;
+  min-height: 27px;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25771,12 +25790,150 @@ page-login .lowerPanel {
   height: 200px;
 }
 
+page-preferenceslanding .bold {
+  font-weight: 500;
+}
+
+page-preferenceslanding .back-button {
+  display: none !important;
+}
+
+page-preferenceslanding ion-content.menu {
+  background-color: red !important;
+}
+
+page-preferenceslanding .mainContent {
+  margin-top: 15%;
+}
+
+page-preferenceslanding ion-img {
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+}
+
+page-preferenceslanding ion-item.image ion-label.label {
+  padding: 6px 0 0 0;
+}
+
+page-preferenceslanding .column {
+  width: 25% !important;
+  text-align: center;
+}
+
+page-preferenceslanding .button-md:hover:not(.disable-hover) {
+  background-color: transparent;
+}
+
+page-preferenceslanding ion-menu div ion-content.content div ion-list button {
+  background-color: transparent;
+}
+
+page-preferenceslanding span.button-inner {
+  display: inline-block;
+}
+
+page-preferenceslanding button.more {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  height: 4rem;
+  text-transform: none;
+}
+
+page-preferenceslanding ion-img.headerText {
+  margin: -6px 8px 0px 0px;
+}
+
+page-preferenceslanding .toolbar-title {
+  color: white !important;
+}
+
+page-preferenceslanding .toolbar-background {
+  background-color: #df8d2e;
+}
+
+page-preferenceslanding ion-footer {
+  padding-bottom: 10px;
+  color: grey;
+  position: fixed !important;
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+}
+
+page-preferenceslanding ion-img img {
+  top: 8px;
+  position: absolute;
+  display: block;
+}
+
+page-preferenceslanding ion-header {
+  position: fixed !important;
+}
+
+page-preferenceslanding .headerText {
+  float: left;
+}
+
+page-preferenceslanding .amountText {
+  float: right;
+}
+
+page-preferenceslanding ion-item {
+  border-bottom: 1px solid #dedede !important;
+}
+
+page-preferenceslanding .item-inner {
+  border-bottom: 0 !important;
+}
+
+page-preferenceslanding ion-item.postedDate {
+  background-color: #f4f4f4;
+  min-height: 35px;
+  height: 35px;
+}
+
+page-preferenceslanding p.headerText {
+  font-size: 1.3rem;
+}
+
+page-preferenceslanding ion-item.slim {
+  height: 35px;
+  min-height: 35px;
+}
+
+page-preferenceslanding ion-item.medium {
+  height: 45px;
+  min-height: 45px;
+}
+
+page-preferenceslanding .green {
+  color: #207d20;
+}
+
+page-preferenceslanding .blue {
+  color: blue;
+}
+
+page-preferenceslanding .orange {
+  color: #df8d2e;
+}
+
 page-quickview .bold {
   font-weight: 500;
 }
 
 page-quickview .back-button {
   display: none !important;
+}
+
+page-quickview ion-content.menu {
+  background-color: red !important;
 }
 
 page-quickview .mainContent {
@@ -25790,9 +25947,41 @@ page-quickview ion-img {
   margin-top: -10px;
 }
 
+page-quickview ion-item.image ion-label.label {
+  padding: 6px 0 0 0;
+}
+
 page-quickview .column {
   width: 25% !important;
   text-align: center;
+}
+
+page-quickview ion-menu div ion-content.content div ion-list button {
+  background-color: transparent;
+}
+
+page-quickview span.button-inner {
+  display: inline-block;
+}
+
+page-quickview button.more {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  height: 4rem;
+  text-transform: none;
+}
+
+page-quickview ion-img.headerText {
+  margin: -6px 8px 0px 0px;
+}
+
+page-quickview .button-md:hover:not(.disable-hover) {
+  background-color: transparent;
 }
 
 page-quickview .toolbar-title {
@@ -25866,5 +26055,144 @@ page-quickview .blue {
 }
 
 page-quickview .orange {
+  color: #df8d2e;
+}
+
+page-zellelanding .bold {
+  font-weight: 500;
+}
+
+page-zellelanding .back-button {
+  display: none !important;
+}
+
+page-zellelanding ion-content.menu {
+  background-color: red !important;
+}
+
+page-zellelanding .mainContent {
+  margin-top: 15%;
+}
+
+page-zellelanding ion-img {
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+}
+
+page-zellelanding ion-item.image ion-label.label {
+  padding: 6px 0 0 0;
+}
+
+page-zellelanding .column {
+  width: 25% !important;
+  text-align: center;
+}
+
+page-zellelanding .button-md:hover:not(.disable-hover) {
+  background-color: transparent;
+}
+
+page-zellelanding ion-menu div ion-content.content div ion-list button {
+  background-color: transparent;
+}
+
+page-zellelanding span.button-inner {
+  display: inline-block;
+}
+
+page-zellelanding button.more {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  height: 4rem;
+  text-transform: none;
+}
+
+page-zellelanding ion-img.headerText {
+  margin: -6px 8px 0px 0px;
+}
+
+page-zellelanding .toolbar-title {
+  color: white !important;
+  font-size: 1.5rem;
+}
+
+page-zellelanding .toolbar-background {
+  background-color: #df8d2e;
+}
+
+page-zellelanding ion-title {
+  font-size: 1.2rem;
+}
+
+page-zellelanding ion-footer {
+  padding-bottom: 10px;
+  color: grey;
+  position: fixed !important;
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+}
+
+page-zellelanding ion-img img {
+  top: 8px;
+  position: absolute;
+  display: block;
+}
+
+page-zellelanding ion-header {
+  position: fixed !important;
+}
+
+page-zellelanding .headerText {
+  float: left;
+}
+
+page-zellelanding .amountText {
+  float: right;
+}
+
+page-zellelanding ion-item {
+  border-bottom: 1px solid #dedede !important;
+}
+
+page-zellelanding .item-inner {
+  border-bottom: 0 !important;
+}
+
+page-zellelanding ion-item.postedDate {
+  background-color: #f4f4f4;
+  min-height: 35px;
+  height: 35px;
+}
+
+page-zellelanding p.headerText {
+  font-size: 1.3rem;
+}
+
+page-zellelanding ion-item.slim {
+  height: 35px;
+  min-height: 35px;
+}
+
+page-zellelanding ion-item.medium {
+  height: 45px;
+  min-height: 45px;
+}
+
+page-zellelanding .green {
+  color: #207d20;
+}
+
+page-zellelanding .blue {
+  color: blue;
+}
+
+page-zellelanding .orange {
   color: #df8d2e;
 }

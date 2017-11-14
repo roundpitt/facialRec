@@ -1,4 +1,4 @@
-webpackJsonp([9],{
+webpackJsonp([11],{
 
 /***/ 121:
 /***/ (function(module, exports) {
@@ -23,38 +23,46 @@ webpackEmptyAsyncContext.id = 121;
 var map = {
 	"../pages/captureLogin/captureLogin.module": [
 		305,
-		8
+		10
 	],
 	"../pages/cards/cards.module": [
 		306,
-		7
+		9
 	],
 	"../pages/login/login.module": [
 		307,
-		6
+		8
 	],
 	"../pages/menu/menu.module": [
 		308,
-		5
+		7
+	],
+	"../pages/preferencesLanding/preferenceslanding.module": [
+		309,
+		6
 	],
 	"../pages/quickview/quickview.module": [
-		309,
-		4
+		310,
+		5
 	],
 	"../pages/search/search.module": [
-		310,
-		3
+		311,
+		4
 	],
 	"../pages/settings/settings.module": [
-		311,
-		2
+		313,
+		3
 	],
 	"../pages/signup/signup.module": [
 		312,
-		1
+		2
 	],
 	"../pages/tabs/tabs.module": [
-		313,
+		314,
+		1
+	],
+	"../pages/zelleLanding/zellelanding.module": [
+		315,
 		0
 	]
 };
@@ -254,6 +262,8 @@ Items = __decorate([
 /* unused harmony export CaptureLoginPage */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return QuickViewPage; });
 /* unused harmony export TabsPage */
+/* unused harmony export PreferencesLandingPage */
+/* unused harmony export ZelleLandingPage */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MainPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Tab1Root; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Tab2Root; });
@@ -265,6 +275,8 @@ var FirstRunPage = 'LoginPage';
 var CaptureLoginPage = 'CaptureLoginPage';
 var QuickViewPage = 'QuickViewPage';
 var TabsPage = 'TabsPage';
+var PreferencesLandingPage = 'PreferencesLandingPage';
+var ZelleLandingPage = 'ZelleLandingPage';
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
 var MainPage = 'TabsPage';
@@ -370,17 +382,21 @@ AppModule = __decorate([
                     deps: [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]]
                 }
             }),
-            __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
+            __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {
+                menuType: 'push'
+            }, {
                 links: [
                     { loadChildren: '../pages/captureLogin/captureLogin.module#CaptureLoginPageModule', name: 'CaptureLoginPage', segment: 'captureLogin', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/preferencesLanding/preferenceslanding.module#PreferencesLandingPageModule', name: 'PreferencesLandingPage', segment: 'preferenceslanding', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/zelleLanding/zellelanding.module#ZelleLandingPageModule', name: 'ZelleLandingPage', segment: 'zellelanding', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
@@ -662,7 +678,15 @@ var MyApp = (function () {
         this.splashScreen = splashScreen;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_pages__["a" /* FirstRunPage */];
         this.pages = [
-            { title: 'FtuSelectId', component: 'FtuSelectIdPage' }
+            { title: 'Log Out', component: 'LoginPage', icon: 'assets/img/preferencesIcon.png' },
+            { title: 'Pay Bills', component: 'LoginPage', icon: 'assets/img/payBillsIcon.png' },
+            { title: 'Activity', component: 'LoginPage', icon: 'assets/img/activityIcon.png' },
+            { title: 'Spending + Budgets', component: 'LoginPage', icon: 'assets/img/spendingIcon.png' },
+            { title: 'Savings Engine', component: 'ZelleLandingPage', icon: 'assets/img/savingsIcon.png' },
+            { title: 'Punch the Pig', component: 'ZelleLandingPage', icon: 'assets/img/pigIcon.png' },
+            { title: 'Send Money with Zelle™', component: 'ZelleLandingPage', icon: 'assets/img/zelleIcon.png' },
+            { title: 'Preferences', component: 'PreferencesLandingPage', icon: 'assets/img/preferencesIcon.png' },
+            { title: 'Rewards & Offers', component: 'LoginPage', icon: 'assets/img/rewardsIcon.png' }
         ];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -694,14 +718,14 @@ var MyApp = (function () {
     return MyApp;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* Nav */])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        template: "<ion-menu [content]=\"content\">\n    <ion-header>\n      <ion-toolbar>\n        <ion-title>Pages</ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
+        template: "<ion-menu side=\"right\" [content]=\"content\">\n    <ion-content class=\"menu\">\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n        <ion-img width=\"15px\" [src]=\"p.icon\"></ion-img>\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map

@@ -1,0 +1,12 @@
+{
+  "name": "TransmitSecurity",
+  "version": "2.13.11",
+ "description": "Transmit Security Cordova plugin",
+ "cordova": {
+    "id": "transmit-sdk",
+    "platforms": [
+       "android",
+       "ios"
+    ]
+  }
+ }

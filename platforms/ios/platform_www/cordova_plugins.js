@@ -40,6 +40,22 @@ module.exports = [
         "clobbers": [
             "window.StatusBar"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-transmit-sdk/src/js/transmitsdk.js",
+        "id": "cordova-plugin-transmit-sdk.TransmitSDKCordovaPlugin",
+        "pluginId": "cordova-plugin-transmit-sdk",
+        "clobbers": [
+            "transmitSDK"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-transmit-sdk/src/ios/ts_platform.js",
+        "id": "cordova-plugin-transmit-sdk.ts_platform",
+        "pluginId": "cordova-plugin-transmit-sdk",
+        "merges": [
+            "transmitSDK"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -50,7 +66,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-statusbar": "2.3.0"
+    "cordova-plugin-statusbar": "2.3.0",
+    "cordova-plugin-transmit-sdk": "2.15"
 }
 // BOTTOM OF METADATA
 });

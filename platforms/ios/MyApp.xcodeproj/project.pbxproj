@@ -38,6 +38,23 @@
 		B14273F1AC5B4367B43B40AB /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D1EAF36C44D939CE4A3A6 /* CDVViewController+SplashScreen.m */; };
 		19700EB2038345C08A892421 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDCDCA5674A47719AA2F1FB /* IonicKeyboard.m */; };
 		A6312CAE3E844062A49C063C /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E90BDBC8CE4C3CBDF9EBED /* CDVStatusBar.m */; };
+		0F2A806AF42E4439BE6DA5E5 /* TransmitSDKCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8C79B519194C26B7CB42A9 /* TransmitSDKCordovaPlugin.m */; };
+		9C06B4D9DBD9428F9D6904D5 /* TransmitSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A19709A8BF449C58E374ED1 /* TransmitSDKResources.bundle */; };
+		8F2614D9311648C7A9914078 /* Transmit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59A32B6382F048769CFB9D6D /* Transmit.ttf */; };
+		9E9218C12F5F43539307CBA0 /* TransmitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AE1797756D4EBFBBD1E759 /* TransmitSDK.framework */; };
+		B350B79139A840AA97C7E63C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186670ABE2454F5D89E74A5B /* LocalAuthentication.framework */; };
+		54A451D979274FD496C7A42B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9823252BE7049A18810E308 /* SystemConfiguration.framework */; };
+		EBD33D04855F4D299955C91B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B4163202684D7AA994E209 /* AddressBook.framework */; };
+		875379FC49B34EC2BC59C197 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C223CB2045E4FDE873B24E4 /* AVFoundation.framework */; };
+		728CCF561B634D1A9A8777B6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19353BFFF194BFB8642D6AC /* CoreBluetooth.framework */; };
+		25FC14268A8A43729E9A2E44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4D60C669BF4083921FB7CF /* CoreLocation.framework */; };
+		CB17A54EC7D1466ABDE48722 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08BC1DAAD31426F82F976BD /* CoreTelephony.framework */; };
+		5C4EC31E0557448D8F5C6510 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259D9031F70F4CEBB2AB647D /* CoreMedia.framework */; };
+		9C4D7205C312414096F220C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8287F0A5D0447579316B4A0 /* AudioToolbox.framework */; };
+		911C21AA31DC4C82A6588F2D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD6D355FC83498A849E455E /* Social.framework */; };
+		995C47A9B07F4ED8A8E6D845 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583D076314DE4B80807C56AA /* Accounts.framework */; };
+		3A1FBB54215741978755C018 /* libxml2.tbd in Resources */ = {isa = PBXBuildFile; fileRef = 88C168EBB5DA4F4FA4181CE9 /* libxml2.tbd */; };
+		C7D0B7B910764D39894BE73B /* libc++.1.tbd in Resources */ = {isa = PBXBuildFile; fileRef = 1CB20B598062478CA7189C06 /* libc++.1.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +140,24 @@
 		1FAA1B2BBC474B349E8F193E /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		C9E90BDBC8CE4C3CBDF9EBED /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		19F4696CECCA42B289CF616B /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EE8C79B519194C26B7CB42A9 /* TransmitSDKCordovaPlugin.m */ = {isa = PBXFileReference; name = "TransmitSDKCordovaPlugin.m"; path = "cordova-plugin-transmit-sdk/Plugins/TransmitSDK/TransmitSDKCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3F7A789F8AC94F98A2D69C01 /* TransmitSDKCordovaPlugin.h */ = {isa = PBXFileReference; name = "TransmitSDKCordovaPlugin.h"; path = "cordova-plugin-transmit-sdk/Plugins/TransmitSDK/TransmitSDKCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6A19709A8BF449C58E374ED1 /* TransmitSDKResources.bundle */ = {isa = PBXFileReference; name = "TransmitSDKResources.bundle"; path = "TransmitSDKResources.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		59A32B6382F048769CFB9D6D /* Transmit.ttf */ = {isa = PBXFileReference; name = "Transmit.ttf"; path = "Transmit.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5AE1797756D4EBFBBD1E759 /* TransmitSDK.framework */ = {isa = PBXFileReference; name = "TransmitSDK.framework"; path = "MyApp/Plugins/cordova-plugin-transmit-sdk/TransmitSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		186670ABE2454F5D89E74A5B /* LocalAuthentication.framework */ = {isa = PBXFileReference; name = "LocalAuthentication.framework"; path = "System/Library/Frameworks/LocalAuthentication.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F9823252BE7049A18810E308 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A1B4163202684D7AA994E209 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5C223CB2045E4FDE873B24E4 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A19353BFFF194BFB8642D6AC /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		1B4D60C669BF4083921FB7CF /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D08BC1DAAD31426F82F976BD /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		259D9031F70F4CEBB2AB647D /* CoreMedia.framework */ = {isa = PBXFileReference; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A8287F0A5D0447579316B4A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4AD6D355FC83498A849E455E /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		583D076314DE4B80807C56AA /* Accounts.framework */ = {isa = PBXFileReference; name = "Accounts.framework"; path = "System/Library/Frameworks/Accounts.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		88C168EBB5DA4F4FA4181CE9 /* libxml2.tbd */ = {isa = PBXFileReference; name = "libxml2.tbd"; path = "libxml2.tbd"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1CB20B598062478CA7189C06 /* libc++.1.tbd */ = {isa = PBXFileReference; name = "libc++.1.tbd"; path = "libc++.1.tbd"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +168,20 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				95A68C27C0A647ECBA6BAB54 /* WebKit.framework in Frameworks */,
 				4A508DCAF73C4D6EB410C3BC /* libz.tbd in Resources */,
+				9E9218C12F5F43539307CBA0 /* TransmitSDK.framework in Frameworks */,
+				B350B79139A840AA97C7E63C /* LocalAuthentication.framework in Frameworks */,
+				54A451D979274FD496C7A42B /* SystemConfiguration.framework in Frameworks */,
+				EBD33D04855F4D299955C91B /* AddressBook.framework in Frameworks */,
+				875379FC49B34EC2BC59C197 /* AVFoundation.framework in Frameworks */,
+				728CCF561B634D1A9A8777B6 /* CoreBluetooth.framework in Frameworks */,
+				25FC14268A8A43729E9A2E44 /* CoreLocation.framework in Frameworks */,
+				CB17A54EC7D1466ABDE48722 /* CoreTelephony.framework in Frameworks */,
+				5C4EC31E0557448D8F5C6510 /* CoreMedia.framework in Frameworks */,
+				9C4D7205C312414096F220C1 /* AudioToolbox.framework in Frameworks */,
+				911C21AA31DC4C82A6588F2D /* Social.framework in Frameworks */,
+				995C47A9B07F4ED8A8E6D845 /* Accounts.framework in Frameworks */,
+				3A1FBB54215741978755C018 /* libxml2.tbd in Resources */,
+				C7D0B7B910764D39894BE73B /* libc++.1.tbd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +243,8 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* MyApp-Info.plist */,
+				6A19709A8BF449C58E374ED1 /* TransmitSDKResources.bundle */,
+				59A32B6382F048769CFB9D6D /* Transmit.ttf */,
 			);
 			name = Resources;
 			path = "MyApp/Resources";
@@ -204,6 +255,20 @@
 			children = (
 				1FB8B04A1F3D43038C675F81 /* WebKit.framework */,
 				B0E94DCA1426422DAAD3CB3D /* libz.tbd */,
+				E5AE1797756D4EBFBBD1E759 /* TransmitSDK.framework */,
+				186670ABE2454F5D89E74A5B /* LocalAuthentication.framework */,
+				F9823252BE7049A18810E308 /* SystemConfiguration.framework */,
+				A1B4163202684D7AA994E209 /* AddressBook.framework */,
+				5C223CB2045E4FDE873B24E4 /* AVFoundation.framework */,
+				A19353BFFF194BFB8642D6AC /* CoreBluetooth.framework */,
+				1B4D60C669BF4083921FB7CF /* CoreLocation.framework */,
+				D08BC1DAAD31426F82F976BD /* CoreTelephony.framework */,
+				259D9031F70F4CEBB2AB647D /* CoreMedia.framework */,
+				A8287F0A5D0447579316B4A0 /* AudioToolbox.framework */,
+				4AD6D355FC83498A849E455E /* Social.framework */,
+				583D076314DE4B80807C56AA /* Accounts.framework */,
+				88C168EBB5DA4F4FA4181CE9 /* libxml2.tbd */,
+				1CB20B598062478CA7189C06 /* libc++.1.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,6 +338,8 @@
 				1FAA1B2BBC474B349E8F193E /* IonicKeyboard.h */,
 				C9E90BDBC8CE4C3CBDF9EBED /* CDVStatusBar.m */,
 				19F4696CECCA42B289CF616B /* CDVStatusBar.h */,
+				EE8C79B519194C26B7CB42A9 /* TransmitSDKCordovaPlugin.m */,
+				3F7A789F8AC94F98A2D69C01 /* TransmitSDKCordovaPlugin.h */,
 			);
 			name = Plugins;
 			path = "MyApp/Plugins";
@@ -356,6 +423,8 @@
 				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				9C06B4D9DBD9428F9D6904D5 /* TransmitSDKResources.bundle in Resources */,
+				8F2614D9311648C7A9914078 /* Transmit.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +477,7 @@
 				B14273F1AC5B4367B43B40AB /* CDVViewController+SplashScreen.m in Sources */,
 				19700EB2038345C08A892421 /* IonicKeyboard.m in Sources */,
 				A6312CAE3E844062A49C063C /* CDVStatusBar.m in Sources */,
+				0F2A806AF42E4439BE6DA5E5 /* TransmitSDKCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +511,10 @@
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "MyApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MyApp/Plugins/cordova-plugin-transmit-sdk\"",
+				);
 			};
 			name = Debug;
 		};
@@ -460,6 +534,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
 				PRODUCT_NAME = "MyApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MyApp/Plugins/cordova-plugin-transmit-sdk\"",
+				);
 			};
 			name = Release;
 		};

@@ -49,6 +49,10 @@ page-quickview {
     	margin: -6px 8px 0px 0px;
 	}
 
+	.button-md:hover:not(.disable-hover) {
+    	background-color: transparent;
+	}
+	
 	.toolbar-title{
 		color: white !important;
 	}

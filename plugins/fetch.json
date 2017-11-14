@@ -46,5 +46,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-transmit-sdk": {
+        "source": {
+            "type": "local",
+            "path": "..\\cordova-plugin-transmit-sdk"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

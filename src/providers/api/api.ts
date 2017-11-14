@@ -16,6 +16,26 @@ export class Api {
 
   url: string = 'http://10.29.140.42:8080/VisaX';
 
+/**
+ * Argument keys to ease construction of expected object in API calls
+ */
+argNames = {
+ // connection details
+ ARG_SERVER_URI : "uri",
+ ARG_SERVER_PORT : "port",
+ ARG_SERVER_IS_SECURE : "is_secure",
+ // API token
+ ARG_API_TOKEN_NAME : "api_token_name",
+ ARG_API_TOKEN : "api_token",
+ // authentication related
+ ARG_USERNAME : "username",
+ ARG_REQUEST_ID : "request_id",
+ ARG_TOKEN : "token",
+ ARG_REQUEST_PARAMS : "request_params",
+ ARG_FORCE_MENU : "force_menu"
+}
+  
+
   constructor(public http: HttpClient) {
     
     

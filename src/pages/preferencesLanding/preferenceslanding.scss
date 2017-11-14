@@ -27,6 +27,10 @@ page-preferenceslanding {
 		text-align: center;
 	}
 
+	.button-md:hover:not(.disable-hover) {
+    	background-color: transparent;
+	}
+
 	ion-menu div ion-content.content div ion-list button{
 		background-color: transparent;
 	}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-transmit-sdk"
+      version="2.15">
+    <name>TransmitSDK</name>
+    <description>Cordova Transmit SDK Integration Plugin</description>
+    <license>Proprietary</license>
+    <keywords>cordova,transmit,authentication,policy</keywords>
+    <info>Transmit Security Authentication Control SDK plugin.</info>
+
+    <engines>
+      <engine name="cordova-android" version=">=4.0.0" />
+      <engine name="cordova-ios" version=">=4.0.0" />
+    </engines>
+
+    <js-module name="TransmitSDKCordovaPlugin" src="src/js/transmitsdk.js">
+      <clobbers target="transmitSDK"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TransmitSDKCordovaPlugin" >
+                <param name="android-package" value="com.ts.cordova.plugin.TransmitSDKCordovaPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/TransmitSDKCordovaPlugin.java" target-dir="src/com/ts/cordova/plugin" />
+        <framework src="src/android/transmit-security.gradle" custom="true" type="gradleReference" />
+
+        <!-- !!! THIS IS TEMPORARY AND SHOULD BE REMOVED WHEN BOTH SDKd/PLUGINs REPORT THE SAME ERROR CODES/TYPES !!! -->
+        <js-module name="ts_platform" src="src/android/ts_platform.js">
+          <merges target="transmitSDK"/>
+        </js-module>
+
+   </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="TransmitSDKCordovaPlugin" >
+              <param name="ios-package" value="TransmitSDKCordovaPlugin"/>
+              <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+            <string>Bluetooth periferals access warning</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>Camera access warning</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>Transmit Security location services always</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>Transmit Security location services when in use</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+            <string>Microphone access warning</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string>Photo library access warning</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="UIAppFonts">
+            <array>
+                <string>Transmit.ttf</string>
+            </array>
+        </config-file>
+        
+        <config-file parent="aps-environment" target="*/Entitlements-Debug.plist">
+            <string>development</string>
+        </config-file>
+        <config-file parent="aps-environment" target="*/Entitlements-Release.plist">
+            <string>production</string>
+        </config-file>
+        
+        
+        <framework src="src/ios/TransmitSDK.framework" custom="true" target-dir="Plugins/TransmitSDK" />
+        <framework src="LocalAuthentication.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="MobileCoreServices.framework" />
+        <framework src="AddressBook.framework" />
+        <framework src="AVFoundation.framework" />
+        <framework src="CoreBluetooth.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="CoreMedia.framework" />
+        <framework src="AudioToolbox.framework" />
+        <framework src="Social.framework" />
+        <framework src="Accounts.framework" />
+        <framework src="libxml2.tbd" />
+        <framework src="libc++.1.tbd" />
+        
+        <resource-file src="src/ios/TransmitSDK.framework/Resources/TransmitSDKResources.bundle" target="Resources/TransmitSDKResources.bundle"/>
+        <resource-file src="src/ios/TransmitSDK.framework/Resources/TransmitSDKResources.bundle/Transmit.ttf" target="Resources/Transmit.ttf"/>
+
+
+        <source-file src="src/ios/TransmitSDKCordovaPlugin.m" target-dir="Plugins/TransmitSDK" />
+        <header-file src="src/ios/TransmitSDKCordovaPlugin.h" target-dir="Plugins/TransmitSDK" />
+        
+       <!-- !!! THIS IS TEMPORARY AND SHOULD BE REMOVED WHEN BOTH SDKd/PLUGINs REPORT THE SAME ERROR CODES/TYPES !!! -->
+       <js-module name="ts_platform" src="src/ios/ts_platform.js">
+          <merges target="transmitSDK"/>
+        </js-module>
+
+    </platform>
+
+</plugin>

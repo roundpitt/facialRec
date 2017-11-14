@@ -1,0 +1,21 @@
+/*
+ * Copyright (C) Transmit Security, LTD - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ */
+
+allprojects {
+	repositories {
+		maven { url "file:///${local_ts_repo_path}" }
+	}
+}
+
+dependencies {
+	compile('com.ts:auth-control-sdk:2.13.8@aar') {
+        transitive = true
+    }
+//	compile('com.eyeverify:srvc-ifc:3.2@aar') {
+//        transitive = true
+//    }
+
+}
