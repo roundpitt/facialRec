@@ -1,15 +1,15 @@
 webpackJsonp([0],{
 
-/***/ 316:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZelleLandingPageModule", function() { return ZelleLandingPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZelleOptionsPageModule", function() { return ZelleOptionsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zelleLanding__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zelleOptions__ = __webpack_require__(336);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,35 +20,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ZelleLandingPageModule = (function () {
-    function ZelleLandingPageModule() {
+var ZelleOptionsPageModule = (function () {
+    function ZelleOptionsPageModule() {
     }
-    return ZelleLandingPageModule;
+    return ZelleOptionsPageModule;
 }());
-ZelleLandingPageModule = __decorate([
+ZelleOptionsPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__zelleLanding__["a" /* ZelleLandingPage */],
+            __WEBPACK_IMPORTED_MODULE_3__zelleOptions__["a" /* ZelleOptionsPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__zelleLanding__["a" /* ZelleLandingPage */]),
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__zelleOptions__["a" /* ZelleOptionsPage */]),
             __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_3__zelleLanding__["a" /* ZelleLandingPage */]
+            __WEBPACK_IMPORTED_MODULE_3__zelleOptions__["a" /* ZelleOptionsPage */]
         ]
     })
-], ZelleLandingPageModule);
+], ZelleOptionsPageModule);
 
-//# sourceMappingURL=zellelanding.module.js.map
+//# sourceMappingURL=zelleOptions.module.js.map
 
 /***/ }),
 
-/***/ 328:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZelleLandingPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZelleOptionsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages__ = __webpack_require__(214);
@@ -65,8 +65,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 //import { MainPage } from '../pages';
-var ZelleLandingPage = (function () {
-    function ZelleLandingPage(navCtrl) {
+var ZelleOptionsPage = (function () {
+    function ZelleOptionsPage(navCtrl) {
         this.navCtrl = navCtrl;
         this.dateToday = new Date();
         this.locale = "en-us";
@@ -89,22 +89,21 @@ var ZelleLandingPage = (function () {
             { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company N', type: 'Other' },
         ];
     }
-    ZelleLandingPage.prototype.ngAfterViewInit = function () {
+    ZelleOptionsPage.prototype.ngAfterViewInit = function () {
     };
-    ZelleLandingPage.prototype.toQuickView = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["d" /* QuickViewPage */]);
+    ZelleOptionsPage.prototype.toQuickView = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["f" /* QuickViewPage */]);
     };
-    return ZelleLandingPage;
+    return ZelleOptionsPage;
 }());
-ZelleLandingPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+ZelleOptionsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-zellelanding',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\zelleLanding\zellelanding.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>SEND MONEY WITH ZELLE<sup>℠</sup></ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <button class="zelleButton">Send</button>\n\n  <button  class="zelleButton">Request</button>\n\n  <!--<h2 class="bold" text-center>Zelle™ Activity</h2>-->\n\n\n\n\n\n</div>\n\n\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\zelleLanding\zellelanding.html"*/
+        selector: 'page-zelleOptions',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\zelleOptions\zelleOptions.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>ZELLE<sup>℠</sup> OPTIONS</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <ion-list>\n\n      <ion-item class="headerText">Threshold<div class="amountText">$<input type="number" min="0.00" step="0.01" max="10" value="0.00" onClick="this.select();"></div></ion-item>\n\n      <ion-item class="headerText">Authentication Type<div class="amountText"><select>\n\n          <option value="none">None</option>\n\n          <option value="password" selected="selected">Password</option>\n\n          <option value="pin">PIN</option>\n\n          <option value="pattern">Pattern</option>\n\n          <option value="face">Face ID</option>\n\n          <option value="touch">Fingerprint ID</option>\n\n          <option value="voice">Voice ID</option>\n\n        </select></div></ion-item>\n\n      <ion-item class="headerText">Geo-Lock<div class="amountText"><select>\n\n  <option value="AL">Alabama</option>\n\n  <option value="AK">Alaska</option>\n\n  <option value="AZ">Arizona</option>\n\n  <option value="AR">Arkansas</option>\n\n  <option value="CA">California</option>\n\n  <option value="CO">Colorado</option>\n\n  <option value="CT">Connecticut</option>\n\n  <option value="DE">Delaware</option>\n\n  <option value="DC">District Of Columbia</option>\n\n  <option value="FL">Florida</option>\n\n  <option value="GA">Georgia</option>\n\n  <option value="HI">Hawaii</option>\n\n  <option value="ID">Idaho</option>\n\n  <option value="IL">Illinois</option>\n\n  <option value="IN">Indiana</option>\n\n  <option value="IA">Iowa</option>\n\n  <option value="KS">Kansas</option>\n\n  <option value="KY">Kentucky</option>\n\n  <option value="LA">Louisiana</option>\n\n  <option value="ME">Maine</option>\n\n  <option value="MD">Maryland</option>\n\n  <option value="MA">Massachusetts</option>\n\n  <option value="MI">Michigan</option>\n\n  <option value="MN">Minnesota</option>\n\n  <option value="MS">Mississippi</option>\n\n  <option value="MO">Missouri</option>\n\n  <option value="MT">Montana</option>\n\n  <option value="NE">Nebraska</option>\n\n  <option value="NV">Nevada</option>\n\n  <option value="NH">New Hampshire</option>\n\n  <option value="NJ">New Jersey</option>\n\n  <option value="NM">New Mexico</option>\n\n  <option value="NY">New York</option>\n\n  <option value="NC">North Carolina</option>\n\n  <option value="ND">North Dakota</option>\n\n  <option value="OH">Ohio</option>\n\n  <option value="OK">Oklahoma</option>\n\n  <option value="OR">Oregon</option>\n\n  <option value="PA" selected="selected">Pennsylvania</option>\n\n  <option value="RI">Rhode Island</option>\n\n  <option value="SC">South Carolina</option>\n\n  <option value="SD">South Dakota</option>\n\n  <option value="TN">Tennessee</option>\n\n  <option value="TX">Texas</option>\n\n  <option value="UT">Utah</option>\n\n  <option value="VT">Vermont</option>\n\n  <option value="VA">Virginia</option>\n\n  <option value="WA">Washington</option>\n\n  <option value="WV">West Virginia</option>\n\n  <option value="WI">Wisconsin</option>\n\n  <option value="WY">Wyoming</option>\n\n</select>       </div></ion-item>\n\n    </ion-list>\n\n</div>\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\zelleOptions\zelleOptions.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
-], ZelleLandingPage);
+], ZelleOptionsPage);
 
-//# sourceMappingURL=zelleLanding.js.map
+//# sourceMappingURL=zelleOptions.js.map
 
 /***/ })
 

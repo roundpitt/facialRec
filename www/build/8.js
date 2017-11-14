@@ -1,15 +1,15 @@
 webpackJsonp([8],{
 
-/***/ 308:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreferencesLandingPageModule", function() { return PreferencesLandingPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__preferencesLanding__ = __webpack_require__(328);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,39 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginPageModule = (function () {
-    function LoginPageModule() {
+var PreferencesLandingPageModule = (function () {
+    function PreferencesLandingPageModule() {
     }
-    return LoginPageModule;
+    return PreferencesLandingPageModule;
 }());
-LoginPageModule = __decorate([
+PreferencesLandingPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_3__preferencesLanding__["a" /* PreferencesLandingPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */]),
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__preferencesLanding__["a" /* PreferencesLandingPage */]),
             __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_3__login__["a" /* LoginPage */]
+            __WEBPACK_IMPORTED_MODULE_3__preferencesLanding__["a" /* PreferencesLandingPage */]
         ]
     })
-], LoginPageModule);
+], PreferencesLandingPageModule);
 
-//# sourceMappingURL=login.module.js.map
+//# sourceMappingURL=preferenceslanding.module.js.map
 
 /***/ }),
 
-/***/ 320:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PreferencesLandingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages__ = __webpack_require__(214);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,92 +65,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-//import { User } from '../../providers/providers';
-
-var LoginPage = (function () {
-    function LoginPage(navCtrl, toastCtrl, translateService, events) {
-        var _this = this;
+//import { MainPage } from '../pages';
+var PreferencesLandingPage = (function () {
+    function PreferencesLandingPage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.toastCtrl = toastCtrl;
-        this.translateService = translateService;
-        this.events = events;
-        // The account fields for the login form.
-        // If you're using the username field with or without email, make
-        // sure to add it to the type
-        this.account = {
-            username: '',
-            password: ''
-        };
-        this.checkSubmit = function () {
-            if (this.account.username != "" &&
-                this.account.username != null &&
-                this.account.password != "" &&
-                this.account.password != null) {
-                document.getElementById("loginBtn").disabled = false;
-            }
-            else {
-                document.getElementById("loginBtn").disabled = true;
-            }
-        };
-        this.floatLabel = function (id) {
-            document.getElementById(id).style.transition = "all .5s ease";
-            document.getElementById(id).style.transform = "translateY(-30px)";
-            document.getElementById(id).style.animation = "sixPhasesFadeIn .5s";
-            document.getElementById(id).style.opacity = "1";
-        };
-        this.blurLabel = function (id) {
-            console.log(id);
-            if (id == 'userIdLabel') {
-                if (this.account.username != "" &&
-                    this.account.username != null) {
-                }
-                else {
-                    document.getElementById(id).style.transition = "all .5s ease";
-                    document.getElementById(id).style.transform = "translateY(0)";
-                    document.getElementById(id).style.animation = "sixPhasesFadeOut .5s";
-                    document.getElementById(id).style.opacity = "0";
-                }
-            }
-            else {
-                if (this.account.password != "" &&
-                    this.account.password != null) {
-                }
-                else {
-                    document.getElementById(id).style.transition = "all .5s ease";
-                    document.getElementById(id).style.transform = "translateY(0)";
-                    document.getElementById(id).style.animation = "sixPhasesFadeOut .5s";
-                    document.getElementById(id).style.opacity = "0";
-                }
-            }
-        };
-        this.translateService.get('LOGIN_ERROR').subscribe(function (value) {
-            _this.loginErrorString = value;
-        });
-        events.subscribe('native.keyboardshow', function (e) {
-            document.getElementById("footer").style.display = "none";
-        });
-        events.subscribe('native.keyboardhide', function (e) {
-            document.getElementById("footer").style.display = "block";
-        });
+        this.dateToday = new Date();
+        this.locale = "en-us";
+        this.month = this.dateToday.toLocaleString(this.locale, { month: "short" });
+        this.day = this.dateToday.getDate();
+        this.accounts = [
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company A', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company B', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company C', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company D', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company E', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company F', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company G', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company H', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company I', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company J', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company K', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company L', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company M', type: 'Other' },
+            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company N', type: 'Other' },
+        ];
     }
-    LoginPage.prototype.ngAfterViewInit = function () {
+    PreferencesLandingPage.prototype.ngAfterViewInit = function () {
     };
-    // open the selfie capture page
-    LoginPage.prototype.doLogin = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages__["d" /* QuickViewPage */]);
+    PreferencesLandingPage.prototype.toQuickView = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["f" /* QuickViewPage */]);
     };
-    return LoginPage;
+    PreferencesLandingPage.prototype.toAuthentication = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["b" /* AuthenticationPage */]);
+    };
+    return PreferencesLandingPage;
 }());
-LoginPage = __decorate([
+PreferencesLandingPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\login\login.html"*/'<ion-content>\n\n  <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>\n\n\n\n    <ion-card class="userIDCard">\n\n      <ion-label class="floatLabel" id="userIdLabel" >User ID</ion-label>\n\n      <ion-input placeholder="User ID" type="text" (keyup)="checkSubmit()" (ionBlur)="blurLabel(\'userIdLabel\')" (ionFocus)="floatLabel(\'userIdLabel\')"  [(ngModel)]="account.username" id="username" name="username"></ion-input>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-label class="floatLabel" id="passwordLabel" >Password</ion-label>\n\n      <ion-input id="passwordInput" placeholder="Password" (keyup)="checkSubmit()" type="password" (ionBlur)="blurLabel(\'passwordLabel\')" (ionFocus)="floatLabel(\'passwordLabel\')"  [(ngModel)]="account.password" name="password"></ion-input>\n\n    </ion-card>\n\n\n\n    <div style="color:white; width:140px; margin:auto;">\n\n      Remember Me <ion-checkbox [(ngModel)]="thing" height="14px" width="14px"></ion-checkbox>\n\n    </div>\n\n\n\n<ion-card style="margin-top:20px">\n\n    <button id="loginBtn" (click)="doLogin()" ion-button disabled>Sign On</button>\n\n  </ion-card>\n\n\n\n  <div style="color:white; width:140px; margin:auto; margin-top:25px;">\n\n    Forgot Password?\n\n  </div>\n\n\n\n<ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" src="assets/img/location.png"></ion-img>\n\n            Locate\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="40px" height="40px" style="position:relative; top:7px;" src="assets/img/moneybar.png"></ion-img>\n\n            View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/questionmark.png"></ion-img>\n\n            Help\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\login\login.html"*/
+        selector: 'page-preferenceslanding',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>PREFERENCES</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <ion-list>\n\n      <ion-item (click)="toAuthentication()" class="headerText">Authentication<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Money Bar Preview<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Punch The Pig<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Switch Accounts<div class="amountText">&gt;</div></ion-item>\n\n      <ion-item class="headerText">Zelle<sup>℠</sup> Preferences<div class="amountText">&gt;</div></ion-item>\n\n  </ion-list>\n\n</div>\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\preferencesLanding\preferenceslanding.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* ToastController */],
-        __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* Events */]])
-], LoginPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
+], PreferencesLandingPage);
 
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=preferencesLanding.js.map
 
 /***/ })
 

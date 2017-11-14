@@ -1,4 +1,4 @@
-webpackJsonp([12],{
+webpackJsonp([16],{
 
 /***/ 121:
 /***/ (function(module, exports) {
@@ -21,52 +21,68 @@ webpackEmptyAsyncContext.id = 121;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/authentication/authentication.module": [
+	"../pages/alertOptions/alertOptions.module": [
 		305,
-		11
+		15
+	],
+	"../pages/authentication/authentication.module": [
+		306,
+		14
 	],
 	"../pages/captureLogin/captureLogin.module": [
-		306,
-		10
+		307,
+		13
 	],
 	"../pages/cards/cards.module": [
-		307,
-		9
+		308,
+		12
 	],
 	"../pages/login/login.module": [
-		308,
-		8
+		309,
+		10
+	],
+	"../pages/loginOptions/loginOptions.module": [
+		310,
+		11
 	],
 	"../pages/menu/menu.module": [
-		309,
-		7
+		311,
+		9
 	],
 	"../pages/preferencesLanding/preferenceslanding.module": [
-		310,
-		6
+		312,
+		8
 	],
 	"../pages/quickview/quickview.module": [
-		311,
-		5
+		313,
+		7
 	],
 	"../pages/search/search.module": [
-		312,
-		4
+		314,
+		6
 	],
 	"../pages/settings/settings.module": [
-		313,
-		3
+		315,
+		5
 	],
 	"../pages/signup/signup.module": [
-		314,
-		2
+		316,
+		4
 	],
 	"../pages/tabs/tabs.module": [
-		315,
-		1
+		317,
+		3
+	],
+	"../pages/travelOptions/travelOptions.module": [
+		318,
+		2
 	],
 	"../pages/zelleLanding/zellelanding.module": [
-		316,
+		319,
+		1
+	],
+	"../pages/zelleOptions/zelleOptions.module": [
+		320,
 		0
 	]
 };
@@ -280,17 +296,21 @@ Items = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FirstRunPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return FirstRunPage; });
 /* unused harmony export CaptureLoginPage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return QuickViewPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return QuickViewPage; });
 /* unused harmony export TabsPage */
 /* unused harmony export PreferencesLandingPage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AuthenticationPage; });
 /* unused harmony export ZelleLandingPage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MainPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Tab1Root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Tab2Root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Tab3Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return LoginOptionsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return ZelleOptionsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertOptionsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return TravelOptionsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return MainPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Tab1Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Tab2Root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Tab3Root; });
 // The page the user lands on after opening the app and without a session
 // The page the user lands on after opening the app and without a session
 var FirstRunPage = 'LoginPage';
@@ -301,6 +321,10 @@ var TabsPage = 'TabsPage';
 var PreferencesLandingPage = 'PreferencesLandingPage';
 var AuthenticationPage = 'AuthenticationPage';
 var ZelleLandingPage = 'ZelleLandingPage';
+var LoginOptionsPage = 'LoginOptionsPage';
+var ZelleOptionsPage = 'ZelleOptionsPage';
+var AlertOptionsPage = 'AlertOptionsPage';
+var TravelOptionsPage = 'TravelOptionsPage';
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
 var MainPage = 'TabsPage';
@@ -410,10 +434,12 @@ AppModule = __decorate([
                 menuType: 'push'
             }, {
                 links: [
+                    { loadChildren: '../pages/alertOptions/alertOptions.module#AlertOptionsPageModule', name: 'AlertOptionsPage', segment: 'alertOptions', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/authentication/authentication.module#AuthenticationPageModule', name: 'AuthenticationPage', segment: 'authentication', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/captureLogin/captureLogin.module#CaptureLoginPageModule', name: 'CaptureLoginPage', segment: 'captureLogin', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/loginOptions/loginOptions.module#LoginOptionsPageModule', name: 'LoginOptionsPage', segment: 'loginOptions', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/preferencesLanding/preferenceslanding.module#PreferencesLandingPageModule', name: 'PreferencesLandingPage', segment: 'preferenceslanding', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
@@ -421,7 +447,9 @@ AppModule = __decorate([
                     { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/zelleLanding/zellelanding.module#ZelleLandingPageModule', name: 'ZelleLandingPage', segment: 'zellelanding', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/travelOptions/travelOptions.module#TravelOptionsPageModule', name: 'TravelOptionsPage', segment: 'travelOptions', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/zelleLanding/zellelanding.module#ZelleLandingPageModule', name: 'ZelleLandingPage', segment: 'zellelanding', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/zelleOptions/zelleOptions.module#ZelleOptionsPageModule', name: 'ZelleOptionsPage', segment: 'zelleOptions', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
@@ -701,7 +729,7 @@ var MyApp = (function () {
         this.config = config;
         this.statusBar = statusBar;
         this.splashScreen = splashScreen;
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_pages__["b" /* FirstRunPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_pages__["c" /* FirstRunPage */];
         this.pages = [
             { title: 'Log Out', component: 'LoginPage', icon: 'assets/img/preferencesIcon.png' },
             { title: 'Pay Bills', component: 'LoginPage', icon: 'assets/img/payBillsIcon.png' },
@@ -744,16 +772,15 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         template: "<ion-menu side=\"right\" [content]=\"content\">\n    <ion-content class=\"menu\">\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n        <ion-img width=\"15px\" [src]=\"p.icon\"></ion-img>\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* Settings */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* Settings */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _g || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
-var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),

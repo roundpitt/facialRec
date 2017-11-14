@@ -1,15 +1,15 @@
 webpackJsonp([5],{
 
-/***/ 311:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuickViewPageModule", function() { return QuickViewPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsPageModule", function() { return SettingsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__quickview__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings__ = __webpack_require__(331);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,37 +20,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var QuickViewPageModule = (function () {
-    function QuickViewPageModule() {
+var SettingsPageModule = (function () {
+    function SettingsPageModule() {
     }
-    return QuickViewPageModule;
+    return SettingsPageModule;
 }());
-QuickViewPageModule = __decorate([
+SettingsPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__quickview__["a" /* QuickViewPage */],
+            __WEBPACK_IMPORTED_MODULE_3__settings__["a" /* SettingsPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__quickview__["a" /* QuickViewPage */]),
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__settings__["a" /* SettingsPage */]),
             __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_3__quickview__["a" /* QuickViewPage */]
+            __WEBPACK_IMPORTED_MODULE_3__settings__["a" /* SettingsPage */]
         ]
     })
-], QuickViewPageModule);
+], SettingsPageModule);
 
-//# sourceMappingURL=quickview.module.js.map
+//# sourceMappingURL=settings.module.js.map
 
 /***/ }),
 
-/***/ 323:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuickViewPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_providers__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -62,43 +65,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-//import { MainPage } from '../pages';
-var QuickViewPage = (function () {
-    function QuickViewPage(navCtrl) {
-        this.navCtrl = navCtrl;
-        this.dateToday = new Date();
-        this.locale = "en-us";
-        this.month = this.dateToday.toLocaleString(this.locale, { month: "short" });
-        this.day = this.dateToday.getDate();
-        this.accounts = [
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company A', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company B', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company C', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company D', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company E', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company F', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company G', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company H', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company I', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company J', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company K', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company L', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company M', type: 'Other' },
-            { desc: 'DEBIT CARD PURCHASE', from: 'spend', to: 'Company N', type: 'Other' },
-        ];
-    }
-    QuickViewPage.prototype.ngAfterViewInit = function () {
-    };
-    return QuickViewPage;
-}());
-QuickViewPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-quickview',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\quickview\quickview.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>QUICK VIEW</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <ion-list>\n\n    <ion-item>\n\n      <h2 class="headerText bold">FREE BALANCE</h2>\n\n      <h1 class="amountText green">$1,000.00</h1>\n\n    </ion-item>\n\n\n\n    <ion-item class="slim">\n\n      <h2 class="headerText bold">ACCOUNTS</h2>\n\n    </ion-item>\n\n\n\n    <ion-item class="medium image">\n\n      <ion-img width="10px" height="40px"  class="headerText" src="assets/img/spendDollar.png"></ion-img>\n\n      <h2 class="headerText orange">Spend</h2>\n\n      <h2 class="amountText">$1,000.00</h2>\n\n    </ion-item>\n\n\n\n    <ion-item class="medium image">\n\n      <ion-img width="10px" height="40px"  class="headerText" src="assets/img/reserveStar.png"></ion-img>\n\n      <h2 class="headerText blue">Reserve</h2>\n\n      <h2 class="amountText">$0.00</h2>\n\n    </ion-item>\n\n\n\n    <ion-item class="slim">\n\n      <p class="headerText blue">Show all accounts</p>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <h2 class="headerText bold">RECENT TRANSACTIONS</h2>\n\n    </ion-item>\n\n\n\n    <ion-item class="postedDate">\n\n      <h2 class="headerText" >{{(month?month:"Nov") + " " + (day?day:"15")}}</h2> <!-- sometimes date returns undefined. Needs to be bug proof for presentation. -->\n\n    </ion-item>\n\n\n\n    <ion-item *ngFor="let account of accounts">\n\n      <h3>{{account.desc}}</h3>\n\n    </ion-item>\n\n  </ion-list>\n\n</div>\n\n\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\quickview\quickview.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
-], QuickViewPage);
 
-//# sourceMappingURL=quickview.js.map
+
+
+/**
+ * The Settings page is a simple form that syncs with a Settings provider
+ * to enable the user to customize settings for the app.
+ *
+ */
+var SettingsPage = SettingsPage_1 = (function () {
+    function SettingsPage(navCtrl, settings, formBuilder, navParams, translate) {
+        this.navCtrl = navCtrl;
+        this.settings = settings;
+        this.formBuilder = formBuilder;
+        this.navParams = navParams;
+        this.translate = translate;
+        this.settingsReady = false;
+        this.profileSettings = {
+            page: 'profile',
+            pageTitleKey: 'SETTINGS_PAGE_PROFILE'
+        };
+        this.page = 'main';
+        this.pageTitleKey = 'SETTINGS_TITLE';
+        this.subSettings = SettingsPage_1;
+    }
+    SettingsPage.prototype._buildForm = function () {
+        var _this = this;
+        var group = {
+            option1: [this.options.option1],
+            option2: [this.options.option2],
+            option3: [this.options.option3]
+        };
+        switch (this.page) {
+            case 'main':
+                break;
+            case 'profile':
+                group = {
+                    option4: [this.options.option4]
+                };
+                break;
+        }
+        this.form = this.formBuilder.group(group);
+        // Watch the form for changes, and
+        this.form.valueChanges.subscribe(function (v) {
+            _this.settings.merge(_this.form.value);
+        });
+    };
+    SettingsPage.prototype.ionViewDidLoad = function () {
+        // Build an empty form for the template to render
+        this.form = this.formBuilder.group({});
+    };
+    SettingsPage.prototype.ionViewWillEnter = function () {
+        var _this = this;
+        // Build an empty form for the template to render
+        this.form = this.formBuilder.group({});
+        this.page = this.navParams.get('page') || this.page;
+        this.pageTitleKey = this.navParams.get('pageTitleKey') || this.pageTitleKey;
+        this.translate.get(this.pageTitleKey).subscribe(function (res) {
+            _this.pageTitle = res;
+        });
+        this.settings.load().then(function () {
+            _this.settingsReady = true;
+            _this.options = _this.settings.allSettings;
+            _this._buildForm();
+        });
+    };
+    SettingsPage.prototype.ngOnChanges = function () {
+        console.log('Ng All Changes');
+    };
+    return SettingsPage;
+}());
+SettingsPage = SettingsPage_1 = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-settings',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\settings\settings.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{ pageTitle }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n  <form [formGroup]="form" *ngIf="settingsReady">\n\n    <ion-list *ngIf="page == \'main\'">\n\n      <ion-item>\n\n        <ion-label>{{ \'SETTINGS_OPTION1\' | translate }}</ion-label>\n\n        <ion-toggle formControlName="option1"></ion-toggle>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label>{{ \'SETTINGS_OPTION2\' | translate }}</ion-label>\n\n        <ion-input formControlName="option2"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label>{{ \'SETTINGS_OPTION3\' | translate }}</ion-label>\n\n        <ion-select formControlName="option3">\n\n          <ion-option value="1" checked="true">1</ion-option>\n\n          <ion-option value="2">2</ion-option>\n\n          <ion-option value="3">3</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n\n\n      <button ion-item [navPush]="subSettings" [navParams]="profileSettings">\n\n        {{ \'SETTINGS_PROFILE_BUTTON\' | translate }}\n\n      </button>\n\n    </ion-list>\n\n\n\n    <ion-list *ngIf="page == \'profile\'">\n\n      <ion-item>\n\n        <ion-label>{{ \'SETTINGS_OPTION4\' | translate }}</ion-label>\n\n        <ion-input formControlName="option4"></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n  </form>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\settings\settings.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["i" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_4__providers_providers__["c" /* Settings */],
+        __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
+        __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
+], SettingsPage);
+
+var SettingsPage_1;
+//# sourceMappingURL=settings.js.map
 
 /***/ })
 
