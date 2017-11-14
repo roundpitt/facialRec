@@ -709,7 +709,7 @@ var MyApp = (function () {
             { title: 'Spending + Budgets', component: 'LoginPage', icon: 'assets/img/spendingIcon.png' },
             { title: 'Savings Engine', component: 'ZelleLandingPage', icon: 'assets/img/savingsIcon.png' },
             { title: 'Punch the Pig', component: 'ZelleLandingPage', icon: 'assets/img/pigIcon.png' },
-            { title: 'Send Money with Zelle™', component: 'ZelleLandingPage', icon: 'assets/img/zelleIcon.png' },
+            { title: 'Send Money with Zelle℠', component: 'ZelleLandingPage', icon: 'assets/img/zelleIcon.png' },
             { title: 'Preferences', component: 'PreferencesLandingPage', icon: 'assets/img/preferencesIcon.png' },
             { title: 'Rewards & Offers', component: 'LoginPage', icon: 'assets/img/rewardsIcon.png' }
         ];
