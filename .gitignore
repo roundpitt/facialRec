@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+www/
+.sourcemaps/
+.js.map
+
 # =========================
 # Operating System Files
 # =========================

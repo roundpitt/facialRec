@@ -92,7 +92,7 @@ var ZelleLandingPage = (function () {
     ZelleLandingPage.prototype.ngAfterViewInit = function () {
     };
     ZelleLandingPage.prototype.toQuickView = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["c" /* QuickViewPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages__["d" /* QuickViewPage */]);
     };
     return ZelleLandingPage;
 }());

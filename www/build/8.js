@@ -138,7 +138,7 @@ var LoginPage = (function () {
     };
     // open the selfie capture page
     LoginPage.prototype.doLogin = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages__["c" /* QuickViewPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages__["d" /* QuickViewPage */]);
     };
     return LoginPage;
 }());

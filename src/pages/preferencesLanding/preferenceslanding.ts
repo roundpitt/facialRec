@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import { QuickViewPage } from '../pages';
+import { AuthenticationPage } from '../pages';
 //import { MainPage } from '../pages';
 
 @IonicPage()
@@ -47,4 +48,9 @@ export class PreferencesLandingPage {
     this.navCtrl.push(QuickViewPage);
   }
 
+  toAuthentication() {
+    this.navCtrl.push(AuthenticationPage);
+  }
+
 }
+
