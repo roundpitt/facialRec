@@ -8,16 +8,11 @@ import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Pages</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content>
+  template: `<ion-menu side="right" [content]="content">
+    <ion-content class="menu">
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-img width="15px" [src]="p.icon"></ion-img>
           {{p.title}}
         </button>
       </ion-list>
@@ -32,7 +27,15 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'FtuSelectId', component: 'FtuSelectIdPage'}
+    { title: 'Log Out', component: 'LoginPage', icon: 'assets/img/preferencesIcon.png'},
+    { title: 'Pay Bills', component: 'LoginPage', icon: 'assets/img/payBillsIcon.png' },
+    { title: 'Activity', component: 'LoginPage', icon: 'assets/img/activityIcon.png' },
+    { title: 'Spending + Budgets', component: 'LoginPage', icon: 'assets/img/spendingIcon.png' },
+    { title: 'Savings Engine', component: 'ZelleLandingPage', icon: 'assets/img/savingsIcon.png' },
+    { title: 'Punch the Pig', component: 'ZelleLandingPage', icon: 'assets/img/pigIcon.png' },
+    { title: 'Send Money with Zelle™', component: 'ZelleLandingPage', icon: 'assets/img/zelleIcon.png' },
+    { title: 'Preferences', component: 'PreferencesLandingPage', icon: 'assets/img/preferencesIcon.png' },
+    { title: 'Rewards & Offers', component: 'LoginPage', icon: 'assets/img/rewardsIcon.png' }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

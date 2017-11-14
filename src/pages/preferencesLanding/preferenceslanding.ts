@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
-
+import { QuickViewPage } from '../pages';
 //import { MainPage } from '../pages';
 
 @IonicPage()
 @Component({
-  selector: 'page-quickview',
-  templateUrl: 'quickview.html'
+  selector: 'page-preferenceslanding',
+  templateUrl: 'preferenceslanding.html'
 })
-export class QuickViewPage {
+export class PreferencesLandingPage {
   dateToday = new Date();
   locale = "en-us";
   month = this.dateToday.toLocaleString(this.locale, {month: "short"});
@@ -39,6 +39,12 @@ export class QuickViewPage {
 
   ngAfterViewInit() {
 
+  }
+
+
+
+  toQuickView() {
+    this.navCtrl.push(QuickViewPage);
   }
 
 }

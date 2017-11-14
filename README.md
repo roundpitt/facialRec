@@ -54,7 +54,7 @@ C:\Users\username\path to project\facialRec\platforms\android\build\outputs\apk
 ```
 To the phones folder. 
 Then open My Files/File Manager on the phone. 
-Run the File.
+Run the File. 
 
 
 # To push to git hub. https://github.com/roundpitt/facialRec.git

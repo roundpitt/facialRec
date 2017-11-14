@@ -1,4 +1,4 @@
-page-quickview {
+page-zellelanding {
 	
 	.bold{
 		font-weight: 500;
@@ -51,9 +51,13 @@ page-quickview {
 
 	.toolbar-title{
 		color: white !important;
+		font-size: 1.5rem;
 	}
 	.toolbar-background {
 	  	background-color: #df8d2e;
+	}
+	ion-title{
+	 	font-size: 1.2rem;
 	}
 	ion-footer{
 		padding-bottom: 10px;

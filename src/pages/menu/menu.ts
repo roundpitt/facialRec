@@ -16,10 +16,7 @@ export class MenuPage {
 
   constructor(public navCtrl: NavController) {
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Sign in', component: 'LoginPage' },
-      { title: 'Signup', component: 'SignupPage' }
-    ];
+    
   }
 
   ionViewDidLoad() {
@@ -29,6 +26,8 @@ export class MenuPage {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if(page.component){
+      this.nav.setRoot(page.component);
+    }
   }
 }

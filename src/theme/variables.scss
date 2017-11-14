@@ -17,6 +17,23 @@ $background-color:  #fff;
 
 
 
+	ion-menu{
+	 ion-content{
+	  background-color: #f3f3f3 !important;
+	 }
+	 button.item.item-block{
+	  background-color: transparent;
+	 }
+	 ion-img.img-unloaded img{
+	  display:block;
+	 }
+	 ion-img {
+		    background-color: transparent;
+		    margin-right: 8px;
+		    min-width: 26px;
+    		min-height: 27px;
+		}
+	}
 
 // Named Color Variables
 // --------------------------------------------------

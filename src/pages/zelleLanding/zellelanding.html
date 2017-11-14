@@ -1,7 +1,7 @@
 <ion-content>
 <ion-header hide-back-button="true">
   <ion-navbar>
-    <ion-title style="    position: relative; top: 2px;" text-center>QUICK VIEW</ion-title>
+    <ion-title style="    position: relative; top: 2px;" text-center>SEND MONEY WITH ZELLE™</ion-title>
       <ion-img style="    top: 17px;
     position: absolute;
     right: 5px;
@@ -57,7 +57,7 @@
 
   <ion-footer id="footer">
         <div class="row" text-center>
-          <div class="column orange">
+          <div (click)="toQuickView()" class="column orange">
             <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>
             Quick View
           </div>

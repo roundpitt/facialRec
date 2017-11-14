@@ -51,7 +51,9 @@ export function provideSettings(storage: Storage) {
         deps: [HttpClient]
       }
     }),
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      menuType: 'push'
+    }),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
