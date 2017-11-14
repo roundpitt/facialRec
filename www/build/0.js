@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 315:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zelleLanding__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zelleLanding__ = __webpack_require__(328);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ ZelleLandingPageModule = __decorate([
 
 /***/ }),
 
-/***/ 326:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,7 +99,7 @@ var ZelleLandingPage = (function () {
 ZelleLandingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-zellelanding',template:/*ion-inline-start:"C:\Users\round\Documents\facialRec\facialRec\src\pages\zelleLanding\zellelanding.html"*/'<ion-content>\n<ion-header hide-back-button="true">\n  <ion-navbar>\n    <ion-title style="    position: relative; top: 2px;" text-center>SEND MONEY WITH ZELLE™</ion-title>\n      <ion-img style="    top: 17px;\n    position: absolute;\n    right: 5px;\n    width: 35px;\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n      <ion-img style="    top: 17px;\n    position: absolute;\n    right: 47px;\n    width: 35px;\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n  </ion-navbar>\n</ion-header>\n<div class="mainContent">\n  <button class="zelleButton">Send</button>\n  <button  class="zelleButton">Request</button>\n  <!--<h2 class="bold" text-center>Zelle™ Activity</h2>-->\n\n\n</div>\n\n  <ion-footer id="footer">\n        <div class="row" text-center>\n          <div (click)="toQuickView()" class="column orange">\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n            Quick View\n          </div>\n          <div class="column">\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n            Deposit\n          </div>\n          <div class="column">\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n            Transfer\n          </div>\n          <div class="column"><button class="more" ion-button menuToggle>\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n            More\n          </button>\n          </div>\n        </div>\n</ion-footer>\n</ion-content>\n'/*ion-inline-end:"C:\Users\round\Documents\facialRec\facialRec\src\pages\zelleLanding\zellelanding.html"*/
+        selector: 'page-zellelanding',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\zelleLanding\zellelanding.html"*/'<ion-content>\n\n<ion-header hide-back-button="true">\n\n  <ion-navbar>\n\n    <ion-title style="    position: relative; top: 2px;" text-center>SEND MONEY WITH ZELLE™</ion-title>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 5px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/calendarIcon.png"></ion-img>\n\n      <ion-img style="    top: 17px;\n\n    position: absolute;\n\n    right: 47px;\n\n    width: 35px;\n\n    height: 40px;"  class="headerText" src="assets/img/barIcon.png"></ion-img>\n\n  </ion-navbar>\n\n</ion-header>\n\n<div class="mainContent">\n\n  <button class="zelleButton">Send</button>\n\n  <button  class="zelleButton">Request</button>\n\n  <!--<h2 class="bold" text-center>Zelle™ Activity</h2>-->\n\n\n\n\n\n</div>\n\n\n\n  <ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div (click)="toQuickView()" class="column orange">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/quickViewIcon.png"></ion-img>\n\n            Quick View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/depositIcon.png"></ion-img>\n\n            Deposit\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/transferIcon.png"></ion-img>\n\n            Transfer\n\n          </div>\n\n          <div class="column"><button class="more" ion-button menuToggle>\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/moreIcon.png"></ion-img>\n\n            More\n\n          </button>\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\zelleLanding\zellelanding.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
 ], ZelleLandingPage);

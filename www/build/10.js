@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__captureLogin__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__captureLogin__ = __webpack_require__(318);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ CaptureLoginPageModule = __decorate([
 
 /***/ }),
 
-/***/ 317:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103,7 +103,7 @@ var CaptureLoginPage = (function () {
 }());
 CaptureLoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-captureLogin',template:/*ion-inline-start:"C:\Users\round\Documents\facialRec\facialRec\src\pages\captureLogin\captureLogin.html"*/'<ion-content>\n\n      <div class="imageStream">\n        <div class="streamControls">\n          <div>\n            <button class="capture" (click)="doLogin()"></button>\n          </div>\n          <div class="backContainer">\n            <button class="backCtrl" (click)="goBack()"></button>\n          </div>\n        </div>\n      </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\round\Documents\facialRec\facialRec\src\pages\captureLogin\captureLogin.html"*/
+        selector: 'page-captureLogin',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\captureLogin\captureLogin.html"*/'<ion-content>\n\n\n\n      <div class="imageStream">\n\n        <div class="streamControls">\n\n          <div>\n\n            <button class="capture" (click)="doLogin()"></button>\n\n          </div>\n\n          <div class="backContainer">\n\n            <button class="backCtrl" (click)="goBack()"></button>\n\n          </div>\n\n        </div>\n\n      </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\captureLogin\captureLogin.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_3__providers_providers__["d" /* User */],

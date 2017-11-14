@@ -1,4 +1,4 @@
-webpackJsonp([11],{
+webpackJsonp([12],{
 
 /***/ 121:
 /***/ (function(module, exports) {
@@ -21,20 +21,24 @@ webpackEmptyAsyncContext.id = 121;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/authentication/authentication.module": [
+		305,
+		11
+	],
 	"../pages/captureLogin/captureLogin.module": [
 		306,
 		10
 	],
 	"../pages/cards/cards.module": [
-		305,
+		307,
 		9
 	],
 	"../pages/login/login.module": [
-		307,
+		308,
 		8
 	],
 	"../pages/menu/menu.module": [
-		308,
+		309,
 		7
 	],
 	"../pages/preferencesLanding/preferenceslanding.module": [
@@ -42,27 +46,27 @@ var map = {
 		6
 	],
 	"../pages/quickview/quickview.module": [
-		309,
+		311,
 		5
 	],
 	"../pages/search/search.module": [
-		311,
+		312,
 		4
 	],
 	"../pages/settings/settings.module": [
-		312,
+		313,
 		3
 	],
 	"../pages/signup/signup.module": [
-		313,
+		314,
 		2
 	],
 	"../pages/tabs/tabs.module": [
-		314,
+		315,
 		1
 	],
 	"../pages/zelleLanding/zellelanding.module": [
-		315,
+		316,
 		0
 	]
 };
@@ -406,12 +410,13 @@ AppModule = __decorate([
                 menuType: 'push'
             }, {
                 links: [
-                    { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/authentication/authentication.module#AuthenticationPageModule', name: 'AuthenticationPage', segment: 'authentication', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/captureLogin/captureLogin.module#CaptureLoginPageModule', name: 'CaptureLoginPage', segment: 'captureLogin', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/preferencesLanding/preferenceslanding.module#PreferencesLandingPageModule', name: 'PreferencesLandingPage', segment: 'preferenceslanding', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/quickview/quickview.module#QuickViewPageModule', name: 'QuickViewPage', segment: 'quickview', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },

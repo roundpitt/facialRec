@@ -25531,6 +25531,136 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-top));
 }
 
+page-authentication .bold {
+  font-weight: 500;
+}
+
+page-authentication .back-button {
+  display: none !important;
+}
+
+page-authentication ion-content.menu {
+  background-color: red !important;
+}
+
+page-authentication .mainContent {
+  margin-top: 15%;
+}
+
+page-authentication ion-img {
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+}
+
+page-authentication ion-item.image ion-label.label {
+  padding: 6px 0 0 0;
+}
+
+page-authentication .column {
+  width: 25% !important;
+  text-align: center;
+}
+
+page-authentication ion-menu div ion-content.content div ion-list button {
+  background-color: transparent;
+}
+
+page-authentication span.button-inner {
+  display: inline-block;
+}
+
+page-authentication button.more {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  height: 4rem;
+  text-transform: none;
+}
+
+page-authentication ion-img.headerText {
+  margin: -6px 8px 0px 0px;
+}
+
+page-authentication .toolbar-title {
+  color: white !important;
+}
+
+page-authentication .toolbar-background {
+  background-color: #df8d2e;
+}
+
+page-authentication ion-footer {
+  padding-bottom: 10px;
+  color: grey;
+  position: fixed !important;
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+}
+
+page-authentication ion-img img {
+  top: 8px;
+  position: absolute;
+  display: block;
+}
+
+page-authentication ion-header {
+  position: fixed !important;
+}
+
+page-authentication .headerText {
+  float: left;
+}
+
+page-authentication .amountText {
+  float: right;
+}
+
+page-authentication ion-item {
+  border-bottom: 1px solid #dedede !important;
+}
+
+page-authentication .item-inner {
+  border-bottom: 0 !important;
+}
+
+page-authentication ion-item.postedDate {
+  background-color: #f4f4f4;
+  min-height: 35px;
+  height: 35px;
+}
+
+page-authentication p.headerText {
+  font-size: 1.3rem;
+}
+
+page-authentication ion-item.slim {
+  height: 35px;
+  min-height: 35px;
+}
+
+page-authentication ion-item.medium {
+  height: 45px;
+  min-height: 45px;
+}
+
+page-authentication .green {
+  color: #207d20;
+}
+
+page-authentication .blue {
+  color: blue;
+}
+
+page-authentication .orange {
+  color: #df8d2e;
+}
+
 @media screen and (max-height: 400px) {
   page-login ion-footer {
     display: none;

@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(320);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ LoginPageModule = __decorate([
 
 /***/ }),
 
-/***/ 318:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\round\Documents\facialRec\facialRec\src\pages\login\login.html"*/'<ion-content>\n  <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>\n\n    <ion-card class="userIDCard">\n      <ion-label class="floatLabel" id="userIdLabel" >User ID</ion-label>\n      <ion-input placeholder="User ID" type="text" (keyup)="checkSubmit()" (ionBlur)="blurLabel(\'userIdLabel\')" (ionFocus)="floatLabel(\'userIdLabel\')"  [(ngModel)]="account.username" id="username" name="username"></ion-input>\n    </ion-card>\n\n    <ion-card>\n      <ion-label class="floatLabel" id="passwordLabel" >Password</ion-label>\n      <ion-input id="passwordInput" placeholder="Password" (keyup)="checkSubmit()" type="password" (ionBlur)="blurLabel(\'passwordLabel\')" (ionFocus)="floatLabel(\'passwordLabel\')"  [(ngModel)]="account.password" name="password"></ion-input>\n    </ion-card>\n\n    <div style="color:white; width:140px; margin:auto;">\n      Remember Me <ion-checkbox [(ngModel)]="thing" height="14px" width="14px"></ion-checkbox>\n    </div>\n\n<ion-card style="margin-top:20px">\n    <button id="loginBtn" (click)="doLogin()" ion-button disabled>Sign On</button>\n  </ion-card>\n\n  <div style="color:white; width:140px; margin:auto; margin-top:25px;">\n    Forgot Password?\n  </div>\n\n<ion-footer id="footer">\n        <div class="row" text-center>\n          <div class="column">\n            <ion-img width="10px" height="40px" src="assets/img/location.png"></ion-img>\n            Locate\n          </div>\n          <div class="column">\n            <ion-img width="40px" height="40px" style="position:relative; top:7px;" src="assets/img/moneybar.png"></ion-img>\n            View\n          </div>\n          <div class="column">\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/questionmark.png"></ion-img>\n            Help\n          </div>\n        </div>\n</ion-footer>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\round\Documents\facialRec\facialRec\src\pages\login\login.html"*/
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\SuperAdmin\facialRec\src\pages\login\login.html"*/'<ion-content>\n\n  <ion-img width="90%" height="103px" src="assets/img/login-logo.png"></ion-img>\n\n\n\n    <ion-card class="userIDCard">\n\n      <ion-label class="floatLabel" id="userIdLabel" >User ID</ion-label>\n\n      <ion-input placeholder="User ID" type="text" (keyup)="checkSubmit()" (ionBlur)="blurLabel(\'userIdLabel\')" (ionFocus)="floatLabel(\'userIdLabel\')"  [(ngModel)]="account.username" id="username" name="username"></ion-input>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-label class="floatLabel" id="passwordLabel" >Password</ion-label>\n\n      <ion-input id="passwordInput" placeholder="Password" (keyup)="checkSubmit()" type="password" (ionBlur)="blurLabel(\'passwordLabel\')" (ionFocus)="floatLabel(\'passwordLabel\')"  [(ngModel)]="account.password" name="password"></ion-input>\n\n    </ion-card>\n\n\n\n    <div style="color:white; width:140px; margin:auto;">\n\n      Remember Me <ion-checkbox [(ngModel)]="thing" height="14px" width="14px"></ion-checkbox>\n\n    </div>\n\n\n\n<ion-card style="margin-top:20px">\n\n    <button id="loginBtn" (click)="doLogin()" ion-button disabled>Sign On</button>\n\n  </ion-card>\n\n\n\n  <div style="color:white; width:140px; margin:auto; margin-top:25px;">\n\n    Forgot Password?\n\n  </div>\n\n\n\n<ion-footer id="footer">\n\n        <div class="row" text-center>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" src="assets/img/location.png"></ion-img>\n\n            Locate\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="40px" height="40px" style="position:relative; top:7px;" src="assets/img/moneybar.png"></ion-img>\n\n            View\n\n          </div>\n\n          <div class="column">\n\n            <ion-img width="10px" height="40px" style="position:relative; top:7px" src="assets/img/questionmark.png"></ion-img>\n\n            Help\n\n          </div>\n\n        </div>\n\n</ion-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\SuperAdmin\facialRec\src\pages\login\login.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* ToastController */],
