@@ -16,45 +16,13 @@
 </ion-header>
 <div class="mainContent">
   <ion-list>
-    <ion-item>
-      <h2 class="headerText bold">FREE BALANCE</h2>
-      <h1 class="amountText green">$1,000.00</h1>
-    </ion-item>
-
-    <ion-item class="slim">
-      <h2 class="headerText bold">ACCOUNTS</h2>
-    </ion-item>
-
-    <ion-item class="medium image">
-      <ion-img width="10px" height="40px"  class="headerText" src="assets/img/spendDollar.png"></ion-img>
-      <h2 class="headerText orange">Spend</h2>
-      <h2 class="amountText">$1,000.00</h2>
-    </ion-item>
-
-    <ion-item class="medium image">
-      <ion-img width="10px" height="40px"  class="headerText" src="assets/img/reserveStar.png"></ion-img>
-      <h2 class="headerText blue">Reserve</h2>
-      <h2 class="amountText">$0.00</h2>
-    </ion-item>
-
-    <ion-item class="slim">
-      <p class="headerText blue">Show all accounts</p>
-    </ion-item>
-
-    <ion-item>
-      <h2 class="headerText bold">RECENT TRANSACTIONS</h2>
-    </ion-item>
-
-    <ion-item class="postedDate">
-      <h2 class="headerText" >{{(month?month:"Nov") + " " + (day?day:"15")}}</h2> <!-- sometimes date returns undefined. Needs to be bug proof for presentation. -->
-    </ion-item>
-
-    <ion-item *ngFor="let account of accounts">
-      <h3>{{account.desc}}</h3>
-    </ion-item>
+      <ion-item class="headerText">Authentication</ion-item>
+      <ion-item class="headerText">Money Bar Preview</ion-item>
+      <ion-item class="headerText">Punch The Pig</ion-item>
+      <ion-item class="headerText">Switch Accounts</ion-item>
+      <ion-item class="headerText">Zelle&#8480; Preferences</ion-item>
   </ion-list>
 </div>
-
   <ion-footer id="footer">
         <div class="row" text-center>
           <div (click)="toQuickView()" class="column orange">
